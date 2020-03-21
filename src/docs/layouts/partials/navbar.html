@@ -1,0 +1,15 @@
+<nav class="navbar" role="navigation" aria-label="navigation" style="background-color: transparent !important;">
+    <div class="navbar-menu">
+        <div class="navbar-start">
+        </div>
+        <div class="navbar-end">
+            {{ range .Site.Data.social }}
+            <a class="navbar-item is-square" href="{{ .url }}" alt="{{ .title }}" target="_blank">
+                <span class="icon">
+                    <i class="fab fa-lg fa-{{ .name }}"></i>
+                </span>
+            </a>
+            {{end}}
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,18 @@
+<table class="table is-hoverable">
+    <thead>
+        <tr>
+            <th class="is-narrow">Variable name</th>
+            <th>Description</th>
+            <th class="is-narrow">Default value</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{ range .Site.Data.variables }}
+        <tr>
+            <td class="is-narrow">{{ .name }}</td>
+            <td>{{ .description }}</td>
+            <td class="is-narrow"><code>{{ .value }}</code></td>
+        </tr>
+        {{ end }}
+    </tbody>
+</table>

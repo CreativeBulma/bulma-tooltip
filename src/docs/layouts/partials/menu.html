@@ -1,0 +1,32 @@
+<a href="{{ .Site.BaseURL }}" class="brand">
+    <span class="title is-6 has-text-weight-normal">{{ .Site.Title }}</span>
+    <span class="subtitle tag is-primary is-light is-7 has-text-weight-light is-uppercase">docs</span>
+</a>
+<ul class="menu-list">
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}
+        {{ if .HasChildren }}
+            <li class="menu-item has-dropdown{{ if $currentPage.HasMenuCurrent "main" . }} is-active{{ end }}">
+                <a href="#" class="menu-title">
+                    {{ .Pre }}
+                    <span>{{ .Name }}</span>
+                    <span class="menu-caret"></span>
+                </a>
+                <ul class="menu-dropdown">
+                    {{ range .Children }}
+                        <li class="{{ if $currentPage.IsMenuCurrent "main" . }}is-active{{ end }}">
+                            <a href="{{ .URL }}" class="menu-item">{{ .Name }}</a>
+                        </li>
+                    {{ end }}
+                </ul>
+            </li>
+        {{ else }}
+            <li class="{{ if $currentPage.HasMenuCurrent "main" . }}is-active{{ end }}">
+                <a href="{{ .URL }}" class="menu-item">
+                    {{ .Pre }}
+                    <span>{{ .Name }}</span>
+                </a>
+            </li>
+        {{ end }}
+    {{ end }}
+</ul>

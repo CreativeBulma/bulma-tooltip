@@ -1,0 +1,31 @@
+{{ $previewID := $.Get "id" }}
+{{ $lang := "html" }}
+{{ with .Get "lang" }}
+  {{ $lang = . }}
+{{ end }}
+{{ $options := "" }}
+{{ with .Get "options" }}
+  {{ $options = . }}
+{{ end }}
+<div class="preview">
+    <div class="tabs">
+        <ul>
+            <li class="is-active" data-toggle="tab" data-target="#preview{{ $previewID }}" role="tab" aria-selected="true">
+                <a>Preview</a>
+            </li>
+            
+            <li data-toggle="tab" data-target="#previewCode{{ $previewID }}" role="tab" aria-selected="false">
+                <a>Code</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="tab-content" id="preview-{{ $previewID }}">
+        <div class="tab-pane is-active" id="preview{{ $previewID }}" role="tabpanel" aria-labelledby="preview-{{ $previewID }}">
+            {{ $.Inner }}
+        </div>
+        <div class="tab-pane" id="previewCode{{ $previewID }}" role="tabpanel" aria-labelledby="preview-code-{{ $previewID }}">
+            {{ highlight $.Inner $lang $options }}
+        </div>
+    </div>
+</div>

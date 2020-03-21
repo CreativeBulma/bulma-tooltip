@@ -1,0 +1,13 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+{{ $ref := "" }}
+{{ $target := "" }}
+{{ with .Get "href" }}
+  {{ $ref = . }}
+{{ end }}
+{{ with .Get "target" }}
+  {{ $target = . }}
+{{ end }}
+{{ with .Get "relref" }}
+  {{ $ref = relref $ . }}
+{{ end }}
+<a {{ with $ref }} href="{{.}}" {{ end }} {{ with $target }} target="{{.}}" {{ end }} class="{{ with .Get "class" }} {{ . }}{{ end }}">{{ with .Get "text" }}{{ . }}{{ end }}</a>

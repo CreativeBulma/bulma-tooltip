@@ -1,0 +1,52 @@
+[
+    {
+        "name": "$tooltip-arrow-size",
+        "description": "",
+        "value": "6px"
+    },
+    {
+        "name": "$tooltip-background-color",
+        "description": "",
+        "value": "$grey-dark"
+    },
+    {
+        "name": "$tooltip-background-opacity",
+        "description": "",
+        "value": "0.9"
+    },
+    {
+        "name": "$tooltip-color",
+        "description": "",
+        "value": "$white"
+    },
+    {
+        "name": "$tooltip-font-family",
+        "description": "",
+        "value": "$family-primary"
+    },
+    {
+        "name": "$tooltip-font-size",
+        "description": "",
+        "value": "$size-7"
+    },
+    {
+        "name": "$tooltip-max-width",
+        "description": "",
+        "value": "15rem"
+    },
+    {
+        "name": "$tooltip-padding",
+        "description": "",
+        "value": ".5rem 1rem"
+    },
+    {
+        "name": "$tooltip-radius",
+        "description": "",
+        "value": "$radius-small"
+    },
+    {
+        "name": "$tooltip-z-index",
+        "description": "",
+        "value": "1020"
+    }
+]

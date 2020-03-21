@@ -1,0 +1,76 @@
+{
+	"name": "@creativebulma/bulma-tooltip",
+	"description": "Display a tooltip attached to any kind of element, in different position.",
+	"version": "1.0.0",
+	"homepage": "https://github.com/CreativeBulma/bulma-tooltip",
+	"author": {
+		"name": "Gaetan",
+		"email": "support@creativebulma.net",
+		"url": "https://creativebulma.net"
+	},
+	"main": "./src/sass/index.sass",
+	"style": "./dist/bulma-tooltip.css",
+	"sass": "./src/sass/index.sass",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/CreativeBulma/bulma-tooltip.git"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/CreativeBulma/bulma-tooltip/issues"
+	},
+	"keywords": [
+		"tooltip",
+		"ui",
+		"component",
+		"extension",
+		"html",
+		"html5",
+		"css3",
+		"sass",
+		"bulma",
+		"bulmaio",
+		"bulma.io"
+	],
+	"devDependencies": {
+		"autoprefixer": "^9.7.4",
+		"bulma": "^0.8",
+		"fs": "0.0.1-security",
+		"gulp": "^4.0.2",
+		"gulp-cache-bust": "^1.4.1",
+		"gulp-clean-dir": "^1.0.2",
+		"gulp-cleancss": "^0.2.2",
+		"gulp-concat": "^2.6.1",
+		"gulp-cssnano": "^2.1.3",
+		"gulp-header": "^2.0.9",
+		"gulp-nop": "0.0.3",
+		"gulp-postcss": "^8.0.0",
+		"gulp-rename": "^2.0.0",
+		"gulp-run": "^1.7.1",
+		"gulp-sass": "^4.0.2",
+		"gulp-shell": "^0.8.0",
+		"gulp-svgmin": "^2.2.0",
+		"gulp-uglify": "^3.0.2",
+		"hugo-bin": "^0.55.6",
+		"parse-filepath": "^1.0.2",
+		"path": "^0.12.7"
+	},
+	"scripts": {
+		"build": "gulp",
+		"build:styles": "gulp build:styles",
+		"demo": "gulp demo",
+		"demo:build": "gulp demo:build",
+		"demo:serve": "gulp demo:serve",
+		"doc": "gulp doc",
+		"doc:build": "gulp doc:build",
+		"doc:serve": "gulp doc:serve",
+		"optimize": "gulp optimize",
+		"start": "gulp demo:serve"
+	},
+	"files": [
+		"dist",
+		"src",
+		"LICENSE",
+		"README.md"
+	]
+}

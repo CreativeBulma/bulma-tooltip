@@ -1,0 +1,22 @@
+{{ $type := .Get 0 }}
+{{ with eq $type "added" }}
+<span class="tag is-capitalize is-info">{{ $type }}</span>
+{{ end }}
+{{ with eq $type "changed" }}
+<span class="tag is-capitalize is-warning">{{ $type }}</span>
+{{ end }}
+{{ with eq $type "fixed" }}
+<span class="tag is-capitalize is-success">{{ $type }}</span>
+{{ end }}
+{{ with eq $type "performance" }}
+<span class="tag is-capitalize is-link">{{ $type }}</span>
+{{ end }}
+{{ with eq $type "security" }}
+<span class="tag is-capitalize is-danger">{{ $type }}</span>
+{{ end }}
+{{ with eq $type "removed" }}
+<span class="tag is-capitalize is-dark">{{ $type }}</span>
+{{ end }}
+{{ with eq $type "deprecated" }}
+<span class="tag is-capitalize is-black">{{ $type }}</span>
+{{ end }}

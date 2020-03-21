@@ -1,0 +1,2 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+<div class="notification is-{{ .Get 0 }} is-light" {{ if len .Params | eq 2 }} id="{{ .Get 1 }}" {{ end }}>{{ .Inner }}</div>
