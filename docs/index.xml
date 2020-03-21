@@ -1,26 +1,58 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>BulmaTooltip</title>
-    <link>/</link>
-    <description>Recent content on BulmaTooltip</description>
+    <title>Introduction on BulmaTooltip</title>
+    <link>https://demo.creativebulma.net/components/tooltip/1.0/</link>
+    <description>Recent content in Introduction on BulmaTooltip</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sat, 21 Mar 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://demo.creativebulma.net/components/tooltip/1.0/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Homepage</title>
-      <link>/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>(2020-03-21)</title>
+      <link>https://demo.creativebulma.net/components/tooltip/1.0/release/1/</link>
+      <pubDate>Sat, 21 Mar 2020 10:46:47 +0200</pubDate>
       
-      <guid>/</guid>
-      <description>Introduction What is BulmaTooltip BulmaTooltip is a pure CSS Bulma extension which brings the ability to easily display a tooltip attached to any kind of element, in different position.
-If you enjoy this component, have a look at our MarketPlace and discover Free and Premium Bulma components and Templates. License BulmaTootlip is © 2020 by CreativeBulma.
-BulmaTootlip is distributed under MIT license.
-Contributing Contribution are welcome!
-You found a bug, a typo issue ?</description>
+      <guid>https://demo.creativebulma.net/components/tooltip/1.0/release/1/</guid>
+      <description>First working version
+  added Styles : with or without arrow  added Multi-colors  added Position modifiers  </description>
+    </item>
+    
+    <item>
+      <title>Customize</title>
+      <link>https://demo.creativebulma.net/components/tooltip/1.0/how-to/customize/</link>
+      <pubDate>Sat, 21 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://demo.creativebulma.net/components/tooltip/1.0/how-to/customize/</guid>
+      <description>How-To Customize This component has been designed to be easily customizable.
+There is 2 ways to customize it, depending on the way you integrate this component into your project.
+Sass If you use the Sass source into your project, all you have to do is to customize variables before importing the component.
+$tooltip-radius: 6px @import &amp;#39;@creativebulma/bulma-tooltip&amp;#39; Variables   Variable name Description Default value     $tooltip-arrow-size  6px   $tooltip-background-color  $grey-dark   $tooltip-background-opacity  0.</description>
+    </item>
+    
+    <item>
+      <title>Get Started</title>
+      <link>https://demo.creativebulma.net/components/tooltip/1.0/get-started/</link>
+      <pubDate>Sat, 21 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://demo.creativebulma.net/components/tooltip/1.0/get-started/</guid>
+      <description>Get started Although Bulma is a pure CSS Framework, modern Website and application use JavaScript to provide a friendlier experience. BulmaBoilerplate has been designed with that in mind and provides a clean structured project with modularity.
+You only need 1 CSS file to use BulmaTooltip
+Installation First, let&amp;rsquo;s install the component! There are several ways to get started with BulmaTooltip.
+ 1. NPM  2. CDN  3. Github    Use npm to install the bulma-tooltip package recommended</description>
+    </item>
+    
+    <item>
+      <title>Changelog</title>
+      <link>https://demo.creativebulma.net/components/tooltip/1.0/changelog/</link>
+      <pubDate>Sat, 21 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://demo.creativebulma.net/components/tooltip/1.0/changelog/</guid>
+      <description>Changelog    v1.0.0 (2020-03-21)    First working version
+  added Styles : with or without arrow  added Multi-colors  added Position modifiers     </description>
     </item>
     
   </channel>

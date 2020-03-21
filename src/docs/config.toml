@@ -1,0 +1,12 @@
+baseURL = "https://demo.creativebulma.net/components/tooltip/1.0/"
+languageCode = "en-us"
+title = "BulmaTooltip"
+theme = "creativebulma"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "how-to"
+    name = "How-To"
+    url = "#"
+    weight = 20

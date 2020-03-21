@@ -1,5 +1,12 @@
 ---
 title: "Customize"
+date: "2020-03-21"
+menu:
+    main:
+        parent: 'how-to'
+        weight: 1
+weight: 1
+draft: false
 ---
 
 # How-To

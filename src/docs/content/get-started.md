@@ -1,5 +1,9 @@
 ---
 title: "Get Started"
+date: "2020-03-21"
+menu: "main"
+weight: 2
+draft: false
 ---
 
 # Get started

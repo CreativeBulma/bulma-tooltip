@@ -133,7 +133,7 @@ gulp.task('default', gulp.series('build', 'optimize'), done => {
  *  DEMO TASKS
  * ----------------------------------------
  */
-gulp.task('demo:build', gulp.series(shell.task(['node_modules/.bin/hugo --source src/demo --destination ../../demo'])), done => {
+gulp.task('demo:build', gulp.series(shell.task(['node_modules/.bin/hugo --source src/demo --destination ../../demo --cleanDestinationDir'])), done => {
     done();
 });
 
@@ -152,7 +152,7 @@ gulp.task('demo', gulp.series(shell.task(['node_modules/.bin/hugo serve --source
  *  DOC TASKS
  * ----------------------------------------
  */
-gulp.task('doc:build', gulp.series(shell.task(['node_modules/.bin/hugo --source src/docs --destination ../../docs'])), done => {
+gulp.task('doc:build', gulp.series(shell.task(['node_modules/.bin/hugo --source src/docs --destination ../../docs --cleanDestinationDir'])), done => {
     done();
 });
 
@@ -162,6 +162,6 @@ gulp.task('doc:serve', gulp.parallel(shell.task(['node_modules/.bin/hugo serve -
     done();
 });
 
-gulp.task('doc', gulp.series(shell.task(['node_modules/.bin/hugo serve --source src/docs'])), done => {
+gulp.task('doc', gulp.series(shell.task(['node_modules/.bin/hugo server --source src/docs'])), done => {
     done();
 });

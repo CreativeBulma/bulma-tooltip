@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="https://demo.creativebulma.net/components/tooltip/1.0/">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    
+    <title>Get Started - BulmaTooltip</title>
+
+    <link rel="icon" href="https://demo.creativebulma.net/components/tooltip/1.0/favicon.png">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <link rel="stylesheet" href="/components/tooltip/1.0/css/docs.css" />
+    <link rel="stylesheet" href="/components/tooltip/1.0/css/bulma-tooltip.min.css" />
+
+    
+
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+<body class=''>
+    
+    <div class="container is-fullheight">
+        
+        <div class="mobile-burger burger is-hidden-desktop" data-target="#doc-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="columns is-gapless is-fullheight">
+            <div id="doc-menu" class="column is-2 menu is-mobile">
+                <a href="https://demo.creativebulma.net/components/tooltip/1.0/" class="brand">
+    <span class="title is-6 has-text-weight-normal">BulmaTooltip</span>
+    <span class="subtitle tag is-primary is-light is-7 has-text-weight-light is-uppercase">docs</span>
+</a>
+<ul class="menu-list">
+    
+    
+    
+        
+            <li class="">
+                <a href="/components/tooltip/1.0/" class="menu-item">
+                    
+                    <span>Introduction</span>
+                </a>
+            </li>
+        
+    
+        
+            <li class="">
+                <a href="/components/tooltip/1.0/get-started/" class="menu-item">
+                    
+                    <span>Get Started</span>
+                </a>
+            </li>
+        
+    
+        
+            <li class="menu-item has-dropdown ">
+                <a href="#" class="menu-title">
+                    
+                    <span>How-To</span>
+                    <span class="menu-caret"></span>
+                </a>
+                <ul class="menu-dropdown">
+                    
+                        <li class="">
+                            <a href="/components/tooltip/1.0/how-to/customize/" class="menu-item">Customize</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+    
+        
+            <li class="">
+                <a href="/components/tooltip/1.0/changelog/" class="menu-item">
+                    
+                    <span>Changelog</span>
+                </a>
+            </li>
+        
+    
+</ul>
+            </div>
+            <div class="column is-fullheight">
+                <nav class="navbar" role="navigation" aria-label="navigation" style="background-color: transparent !important;">
+    <div class="navbar-menu">
+        <div class="navbar-start">
+        </div>
+        <div class="navbar-end">
+            
+            <a class="navbar-item is-square" href="https://github.com" alt="Github repository" target="_blank">
+                <span class="icon">
+                    <i class="fab fa-lg fa-github"></i>
+                </span>
+            </a>
+            
+            <a class="navbar-item is-square" href="https://twitter.com" alt="Follow us on Twitter" target="_blank">
+                <span class="icon">
+                    <i class="fab fa-lg fa-twitter"></i>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</nav>
+
+                <div class="section is-fullheight" style="padding: 3rem;">
+                    <div class="content is-fullheight">
+                        <h1 id="get-started">Get started</h1>
+<p>Although 
+
+
+
+  
+
+
+  
+
+
+<a  href="https://bulma.io"   target="_blank"  class="">Bulma</a> is a pure CSS Framework, modern Website and application use JavaScript to provide a friendlier experience. BulmaBoilerplate has been designed with that in mind and provides a clean structured project with modularity.</p>
+<p><strong>You only need 1 CSS file to use BulmaTooltip</strong></p>
+<h2 id="installation">Installation</h2>
+<h3 id="first-lets-install-the-component">First, let&rsquo;s install the component!</h3>
+<p>There are several ways to get started with BulmaTooltip.</p>
+<div class="tabs">
+    <ul>
+        
+		
+
+		
+		
+		
+
+		
+        <li class="is-active" id="nav-1" data-toggle="tab" data-target="#tab11" role="tab" aria-selected="true">
+            <a>1. NPM</a>
+        </li>
+        
+		
+
+		
+		
+		
+
+		
+        <li id="nav-1" data-toggle="tab" data-target="#tab12" role="tab" aria-selected="false">
+            <a>2. CDN</a>
+        </li>
+        
+		
+
+		
+		
+		
+
+		
+        <li id="nav-1" data-toggle="tab" data-target="#tab13" role="tab" aria-selected="false">
+            <a>3. Github</a>
+        </li>
+        
+		
+    </ul>
+</div>
+<div class="tab-content" id="1">
+
+
+
+
+
+
+<div class="tab-pane is-active" id="tab11" role="tabpanel" aria-labelledby="nav-tabName1">
+	<p>Use npm to install the <code>bulma-tooltip</code> package <strong>recommended</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">npm install @creativebulma/bulma-tooltip
+</code></pre></div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="tab-pane" id="tab12" role="tabpanel" aria-labelledby="nav-tabName2">
+	<p>Use the <a href="https://jsdelivr.com">jsDelivr</a> CDN to link to the BulmaTooltip stylesheet</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">https://jsdelivr.com/package/npm/@creativebulma/bulma-tootlip
+</code></pre></div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="tab-pane" id="tab13" role="tabpanel" aria-labelledby="nav-tabName3">
+	<p>Use the GitHub repository to get the latest development version.</p>
+<p>Download from the repository <a href="https://github.com/CreativeBulma/bulma-tooltip/tree/master/dist/">https://github.com/CreativeBulma/bulma-tooltip/tree/master/dist/</a></p>
+
+</div>
+
+
+
+</div>
+<h2 id="usage">Usage</h2>
+<p>Tooltips are displayed into a small grey box on top of the element. All you have to do is to add <code>tooltip</code> dataset with the text you want to display as value.</p>
+<h3 id="styles">Styles</h3>
+<h4 id="default">Default</h4>
+
+
+
+  
+
+
+
+<div class="preview">
+    <div class="tabs">
+        <ul>
+            <li class="is-active" data-toggle="tab" data-target="#previewdefault" role="tab" aria-selected="true">
+                <a>Preview</a>
+            </li>
+            
+            <li data-toggle="tab" data-target="#previewCodedefault" role="tab" aria-selected="false">
+                <a>Code</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="tab-content" id="preview-default">
+        <div class="tab-pane is-active" id="previewdefault" role="tabpanel" aria-labelledby="preview-default">
+            
+<p>Lorem ipsum dolor sit amet, <span data-tooltip="Tooltip content">consectetur adipisicing elit</span>. Ipsa fugit dolores earum quod distinctio ducimus non dignissimos molestias amet corrupti voluptatum assumenda impedit beatae veritatis nemo veniam error, hic cumque.</p>
+
+        </div>
+        <div class="tab-pane" id="previewCodedefault" role="tabpanel" aria-labelledby="preview-code-default">
+            <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">
+&lt;<span style="color:#f92672">p</span>&gt;Lorem ipsum dolor sit amet, &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">data-tooltip</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Tooltip content&#34;</span>&gt;consectetur adipisicing elit&lt;/<span style="color:#f92672">span</span>&gt;. Ipsa fugit dolores earum quod distinctio ducimus non dignissimos molestias amet corrupti voluptatum assumenda impedit beatae veritatis nemo veniam error, hic cumque.&lt;/<span style="color:#f92672">p</span>&gt;
+</code></pre></div>
+        </div>
+    </div>
+</div>
+<p>Tooltip can be used on any type of HTML element supporting dataset.
+
+
+
+  
+
+
+
+<div class="preview">
+    <div class="tabs">
+        <ul>
+            <li class="is-active" data-toggle="tab" data-target="#previewbutton" role="tab" aria-selected="true">
+                <a>Preview</a>
+            </li>
+            
+            <li data-toggle="tab" data-target="#previewCodebutton" role="tab" aria-selected="false">
+                <a>Code</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="tab-content" id="preview-button">
+        <div class="tab-pane is-active" id="previewbutton" role="tabpanel" aria-labelledby="preview-button">
+            
+<button class="button" data-tooltip="Tooltip Text">top tooltip</button>
+
+        </div>
+        <div class="tab-pane" id="previewCodebutton" role="tabpanel" aria-labelledby="preview-code-button">
+            <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">
+&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span> <span style="color:#a6e22e">data-tooltip</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Tooltip Text&#34;</span>&gt;top tooltip&lt;/<span style="color:#f92672">button</span>&gt;
+</code></pre></div>
+        </div>
+    </div>
+</div></p>
+<h4 id="with-arrow">With Arrow</h4>
+<p>For design purpose, you can display an arrow on the tooltip box by adding <code>has-tooltip-arrow</code> class on the element.
+
+
+
+  
+
+
+
+<div class="preview">
+    <div class="tabs">
+        <ul>
+            <li class="is-active" data-toggle="tab" data-target="#previewarrow" role="tab" aria-selected="true">
+                <a>Preview</a>
+            </li>
+            
+            <li data-toggle="tab" data-target="#previewCodearrow" role="tab" aria-selected="false">
+                <a>Code</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="tab-content" id="preview-arrow">
+        <div class="tab-pane is-active" id="previewarrow" role="tabpanel" aria-labelledby="preview-arrow">
+            
+<p>Lorem ipsum dolor sit amet, <span class="has-tooltip-arrow" data-tooltip="Tooltip content">consectetur adipisicing elit</span>. Ipsa fugit dolores earum quod distinctio ducimus non dignissimos molestias amet corrupti voluptatum assumenda impedit beatae veritatis nemo veniam error, hic cumque.</p>
+
+        </div>
+        <div class="tab-pane" id="previewCodearrow" role="tabpanel" aria-labelledby="preview-code-arrow">
+            <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">
+&lt;<span style="color:#f92672">p</span>&gt;Lorem ipsum dolor sit amet, &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;has-tooltip-arrow&#34;</span> <span style="color:#a6e22e">data-tooltip</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Tooltip content&#34;</span>&gt;consectetur adipisicing elit&lt;/<span style="color:#f92672">span</span>&gt;. Ipsa fugit dolores earum quod distinctio ducimus non dignissimos molestias amet corrupti voluptatum assumenda impedit beatae veritatis nemo veniam error, hic cumque.&lt;/<span style="color:#f92672">p</span>&gt;
+</code></pre></div>
+        </div>
+    </div>
+</div></p>
+<h3 id="position">Position</h3>
+<p>Tooltip position can be changed by adding one of the following classes to the HTML element containing the tooltip: <code>has-tooltip-right</code>, <code>has-tooltip-bottom</code>, <code>has-tooltip-left</code>.
+
+
+
+  
+
+
+
+<div class="preview">
+    <div class="tabs">
+        <ul>
+            <li class="is-active" data-toggle="tab" data-target="#previewposition" role="tab" aria-selected="true">
+                <a>Preview</a>
+            </li>
+            
+            <li data-toggle="tab" data-target="#previewCodeposition" role="tab" aria-selected="false">
+                <a>Code</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="tab-content" id="preview-position">
+        <div class="tab-pane is-active" id="previewposition" role="tabpanel" aria-labelledby="preview-position">
+            
+<p>Lorem ipsum dolor sit amet, <span class="has-tooltip-arrow" data-tooltip="Tooltip content on top">consectetur adipisicing elit</span>. Ipsa fugit <span class="has-tooltip-arrow has-tooltip-right" data-tooltip="Right tooltip content">dolores</span> earum quod distinctio ducimus non dignissimos <span class="has-tooltip-arrow has-tooltip-bottom" data-tooltip="Bottom tooltip content">molestias</span> amet corrupti voluptatum assumenda impedit beatae <span class="has-tooltip-arrow has-tooltip-left" data-tooltip="Left tooltip content">veritatis</span> nemo veniam error, hic cumque.</p>
+
+        </div>
+        <div class="tab-pane" id="previewCodeposition" role="tabpanel" aria-labelledby="preview-code-position">
+            <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">
+&lt;<span style="color:#f92672">p</span>&gt;Lorem ipsum dolor sit amet, &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;has-tooltip-arrow&#34;</span> <span style="color:#a6e22e">data-tooltip</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Tooltip content on top&#34;</span>&gt;consectetur adipisicing elit&lt;/<span style="color:#f92672">span</span>&gt;. Ipsa fugit &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;has-tooltip-arrow has-tooltip-right&#34;</span> <span style="color:#a6e22e">data-tooltip</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Right tooltip content&#34;</span>&gt;dolores&lt;/<span style="color:#f92672">span</span>&gt; earum quod distinctio ducimus non dignissimos &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;has-tooltip-arrow has-tooltip-bottom&#34;</span> <span style="color:#a6e22e">data-tooltip</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Bottom tooltip content&#34;</span>&gt;molestias&lt;/<span style="color:#f92672">span</span>&gt; amet corrupti voluptatum assumenda impedit beatae &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;has-tooltip-arrow has-tooltip-left&#34;</span> <span style="color:#a6e22e">data-tooltip</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Left tooltip content&#34;</span>&gt;veritatis&lt;/<span style="color:#f92672">span</span>&gt; nemo veniam error, hic cumque.&lt;/<span style="color:#f92672">p</span>&gt;
+</code></pre></div>
+        </div>
+    </div>
+</div></p>
+<h3 id="colors">Colors</h3>
+<p>Tooltip supports colors modifier by adding one of the following classes to the HTML element containing the tooltip: <code>has-tooltip-info</code>, <code>has-tooltip-warning</code>, <code>has-tooltip-primary</code>, <code>has-tooltip-success</code>, <code>has-tooltip-danger</code>.
+
+
+
+  
+
+
+
+<div class="preview">
+    <div class="tabs">
+        <ul>
+            <li class="is-active" data-toggle="tab" data-target="#previewcolors" role="tab" aria-selected="true">
+                <a>Preview</a>
+            </li>
+            
+            <li data-toggle="tab" data-target="#previewCodecolors" role="tab" aria-selected="false">
+                <a>Code</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="tab-content" id="preview-colors">
+        <div class="tab-pane is-active" id="previewcolors" role="tabpanel" aria-labelledby="preview-colors">
+            
+<p>Lorem ipsum <span class="has-tooltip-arrow has-tooltip-info" data-tooltip="Info tooltip content">dolor</span> sit amet, <span class="has-tooltip-arrow has-tooltip-warning" data-tooltip="Warning tooltip content">consectetur adipisicing elit</span>. Ipsa fugit <span class="has-tooltip-arrow has-tooltip-right has-tooltip-success" data-tooltip="Success tooltip content">dolores</span> earum quod distinctio ducimus non dignissimos <span class="has-tooltip-arrow has-tooltip-bottom has-tooltip-primary" data-tooltip="Primary tooltip content">molestias</span> amet corrupti voluptatum assumenda impedit beatae <span class="has-tooltip-arrow has-tooltip-left has-tooltip-danger" data-tooltip="Danger tooltip content">veritatis</span> nemo veniam error, hic cumque.</p>
+
+        </div>
+        <div class="tab-pane" id="previewCodecolors" role="tabpanel" aria-labelledby="preview-code-colors">
+            <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">
+&lt;<span style="color:#f92672">p</span>&gt;Lorem ipsum &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;has-tooltip-arrow has-tooltip-info&#34;</span> <span style="color:#a6e22e">data-tooltip</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Info tooltip content&#34;</span>&gt;dolor&lt;/<span style="color:#f92672">span</span>&gt; sit amet, &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;has-tooltip-arrow has-tooltip-warning&#34;</span> <span style="color:#a6e22e">data-tooltip</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Warning tooltip content&#34;</span>&gt;consectetur adipisicing elit&lt;/<span style="color:#f92672">span</span>&gt;. Ipsa fugit &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;has-tooltip-arrow has-tooltip-right has-tooltip-success&#34;</span> <span style="color:#a6e22e">data-tooltip</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Success tooltip content&#34;</span>&gt;dolores&lt;/<span style="color:#f92672">span</span>&gt; earum quod distinctio ducimus non dignissimos &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;has-tooltip-arrow has-tooltip-bottom has-tooltip-primary&#34;</span> <span style="color:#a6e22e">data-tooltip</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Primary tooltip content&#34;</span>&gt;molestias&lt;/<span style="color:#f92672">span</span>&gt; amet corrupti voluptatum assumenda impedit beatae &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;has-tooltip-arrow has-tooltip-left has-tooltip-danger&#34;</span> <span style="color:#a6e22e">data-tooltip</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Danger tooltip content&#34;</span>&gt;veritatis&lt;/<span style="color:#f92672">span</span>&gt; nemo veniam error, hic cumque.&lt;/<span style="color:#f92672">p</span>&gt;
+</code></pre></div>
+        </div>
+    </div>
+</div></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="/components/tooltip/1.0/js/clipboard.min.js" type="text/javascript"></script>
+    <script async src="/components/tooltip/1.0/js/docs.js" type="text/javascript"></script>
+    
+</body>
+
+</html>

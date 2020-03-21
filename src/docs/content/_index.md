@@ -1,5 +1,9 @@
 ---
-title: "Homepage"
+title: "Introduction"
+date: "2020-03-21"
+menu: "main"
+weight: 1
+draft: false
 ---
 
 # Introduction
@@ -21,4 +25,3 @@ BulmaTootlip is distributed under [MIT](https://github.com/CreativeBulma/bulma-t
 You found a bug, a typo issue ? Feel free to create a PR on the [github repository](https://github.com/CreativeBulma/bulma-tooltip/) of this project.
 
 When contributing to this project, please first discuss the change you wish to make via issue on the [github repository](https://github.com/CreativeBulma/bulma-tooltip//issues), email, or any other method with the owners of this project before making a change.
-

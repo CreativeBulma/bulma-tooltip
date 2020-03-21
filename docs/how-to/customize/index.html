@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="https://demo.creativebulma.net/components/tooltip/1.0/">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    
+    <title>Customize - BulmaTooltip</title>
+
+    <link rel="icon" href="https://demo.creativebulma.net/components/tooltip/1.0/favicon.png">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <link rel="stylesheet" href="/components/tooltip/1.0/css/docs.css" />
+    <link rel="stylesheet" href="/components/tooltip/1.0/css/bulma-tooltip.min.css" />
+
+    
+
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+<body class=''>
+    
+    <div class="container is-fullheight">
+        
+        <div class="mobile-burger burger is-hidden-desktop" data-target="#doc-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="columns is-gapless is-fullheight">
+            <div id="doc-menu" class="column is-2 menu is-mobile">
+                <a href="https://demo.creativebulma.net/components/tooltip/1.0/" class="brand">
+    <span class="title is-6 has-text-weight-normal">BulmaTooltip</span>
+    <span class="subtitle tag is-primary is-light is-7 has-text-weight-light is-uppercase">docs</span>
+</a>
+<ul class="menu-list">
+    
+    
+    
+        
+            <li class="">
+                <a href="/components/tooltip/1.0/" class="menu-item">
+                    
+                    <span>Introduction</span>
+                </a>
+            </li>
+        
+    
+        
+            <li class="">
+                <a href="/components/tooltip/1.0/get-started/" class="menu-item">
+                    
+                    <span>Get Started</span>
+                </a>
+            </li>
+        
+    
+        
+            <li class="menu-item has-dropdown is-active">
+                <a href="#" class="menu-title">
+                    
+                    <span>How-To</span>
+                    <span class="menu-caret"></span>
+                </a>
+                <ul class="menu-dropdown">
+                    
+                        <li class="is-active">
+                            <a href="/components/tooltip/1.0/how-to/customize/" class="menu-item">Customize</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+    
+        
+            <li class="">
+                <a href="/components/tooltip/1.0/changelog/" class="menu-item">
+                    
+                    <span>Changelog</span>
+                </a>
+            </li>
+        
+    
+</ul>
+            </div>
+            <div class="column is-fullheight">
+                <nav class="navbar" role="navigation" aria-label="navigation" style="background-color: transparent !important;">
+    <div class="navbar-menu">
+        <div class="navbar-start">
+        </div>
+        <div class="navbar-end">
+            
+            <a class="navbar-item is-square" href="https://github.com" alt="Github repository" target="_blank">
+                <span class="icon">
+                    <i class="fab fa-lg fa-github"></i>
+                </span>
+            </a>
+            
+            <a class="navbar-item is-square" href="https://twitter.com" alt="Follow us on Twitter" target="_blank">
+                <span class="icon">
+                    <i class="fab fa-lg fa-twitter"></i>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</nav>
+
+                <div class="section is-fullheight" style="padding: 3rem;">
+                    <div class="content is-fullheight">
+                        <h1 id="how-to">How-To</h1>
+<h2 id="customize">Customize</h2>
+<p>This component has been designed to be easily customizable.</p>
+<p>There is 2 ways to customize it, depending on the way you integrate this component into your project.</p>
+<h2 id="sass">Sass</h2>
+<p>If you use the Sass source into your project, all you have to do is to customize variables before importing the component.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sass" data-lang="sass"><span style="color:#a6e22e">$tooltip-radius</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">6</span><span style="color:#66d9ef">px</span>
+
+<span style="color:#66d9ef">@import</span> <span style="color:#e6db74">&#39;@creativebulma/bulma-tooltip&#39;</span>
+</code></pre></div><h3 id="variables">Variables</h3>
+<table class="table is-hoverable">
+    <thead>
+        <tr>
+            <th class="is-narrow">Variable name</th>
+            <th>Description</th>
+            <th class="is-narrow">Default value</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr>
+            <td class="is-narrow">$tooltip-arrow-size</td>
+            <td></td>
+            <td class="is-narrow"><code>6px</code></td>
+        </tr>
+        
+        <tr>
+            <td class="is-narrow">$tooltip-background-color</td>
+            <td></td>
+            <td class="is-narrow"><code>$grey-dark</code></td>
+        </tr>
+        
+        <tr>
+            <td class="is-narrow">$tooltip-background-opacity</td>
+            <td></td>
+            <td class="is-narrow"><code>0.9</code></td>
+        </tr>
+        
+        <tr>
+            <td class="is-narrow">$tooltip-color</td>
+            <td></td>
+            <td class="is-narrow"><code>$white</code></td>
+        </tr>
+        
+        <tr>
+            <td class="is-narrow">$tooltip-font-family</td>
+            <td></td>
+            <td class="is-narrow"><code>$family-primary</code></td>
+        </tr>
+        
+        <tr>
+            <td class="is-narrow">$tooltip-font-size</td>
+            <td></td>
+            <td class="is-narrow"><code>$size-7</code></td>
+        </tr>
+        
+        <tr>
+            <td class="is-narrow">$tooltip-max-width</td>
+            <td></td>
+            <td class="is-narrow"><code>15rem</code></td>
+        </tr>
+        
+        <tr>
+            <td class="is-narrow">$tooltip-padding</td>
+            <td></td>
+            <td class="is-narrow"><code>.5rem 1rem</code></td>
+        </tr>
+        
+        <tr>
+            <td class="is-narrow">$tooltip-radius</td>
+            <td></td>
+            <td class="is-narrow"><code>$radius-small</code></td>
+        </tr>
+        
+        <tr>
+            <td class="is-narrow">$tooltip-z-index</td>
+            <td></td>
+            <td class="is-narrow"><code>1020</code></td>
+        </tr>
+        
+    </tbody>
+</table>
+<h2 id="css">CSS</h2>
+<p>If you uses the CSS version you have to customize Sass source files then rebuild the CSS file.</p>
+<h3 id="first-lets-install-some-packages">First, let&rsquo;s install some packages!</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">npm install
+</code></pre></div><p>This command will install all development required package.</p>
+<h3 id="customize-1">Customize</h3>
+<p>Customize Sass variables defined wihtin <code>src/sass/_variables.sass</code> file.</p>
+<h3 id="build">Build</h3>
+<p>You can build CSS files by launching the build process with the command:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">npm run build
+</code></pre></div><p>Styles are built using <code>node-sass</code> from <code>src/sass</code> directory and minify them.
+Built files will be copied into <code>/dist</code> directory (can be customized within package.json).</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="/components/tooltip/1.0/js/clipboard.min.js" type="text/javascript"></script>
+    <script async src="/components/tooltip/1.0/js/docs.js" type="text/javascript"></script>
+    
+</body>
+
+</html>

@@ -4,9 +4,10 @@
 </a>
 <ul class="menu-list">
     {{ $currentPage := . }}
+    
     {{ range .Site.Menus.main }}
         {{ if .HasChildren }}
-            <li class="menu-item has-dropdown{{ if $currentPage.HasMenuCurrent "main" . }} is-active{{ end }}">
+            <li class="menu-item has-dropdown {{ if $currentPage.HasMenuCurrent "main" . }}is-active{{ end }}">
                 <a href="#" class="menu-title">
                     {{ .Pre }}
                     <span>{{ .Name }}</span>
