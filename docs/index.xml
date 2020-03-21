@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BulmaTooltip</title>
+    <link>/</link>
+    <description>Recent content on BulmaTooltip</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Homepage</title>
+      <link>/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/</guid>
+      <description>Introduction What is BulmaTooltip BulmaTooltip is a pure CSS Bulma extension which brings the ability to easily display a tooltip attached to any kind of element, in different position.
+If you enjoy this component, have a look at our MarketPlace and discover Free and Premium Bulma components and Templates. License BulmaTootlip is © 2020 by CreativeBulma.
+BulmaTootlip is distributed under MIT license.
+Contributing Contribution are welcome!
+You found a bug, a typo issue ?</description>
+    </item>
+    
+  </channel>
+</rss>
