@@ -130,25 +130,6 @@ gulp.task('default', gulp.series('build', 'optimize'), done => {
 
 /**
  * ----------------------------------------
- *  DEMO TASKS
- * ----------------------------------------
- */
-gulp.task('demo:build', gulp.series(shell.task(['node_modules/.bin/hugo --source src/demo --destination ../../demo --cleanDestinationDir'])), done => {
-    done();
-});
-
-gulp.task('demo:serve', gulp.series(shell.task(['node_modules/.bin/hugo serve --source src/demo --watch']), function() {
-    gulp.watch(path.resolve(__dirname, 'src/sass/**/*.sass'), gulp.series('build:styles'));
-}), done => {
-    done();
-});
-
-gulp.task('demo', gulp.series(shell.task(['node_modules/.bin/hugo serve --source src/demo'])), done => {
-    done();
-});
-
-/**
- * ----------------------------------------
  *  DOC TASKS
  * ----------------------------------------
  */
