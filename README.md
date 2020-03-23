@@ -3,6 +3,7 @@ This components has been developped as a [Bulma](https://bulma.io) extension and
 
 [![npm](https://img.shields.io/npm/v/@creativebulma/bulma-tooltip.svg)](https://www.npmjs.com/package/@creativebulma/bulma-tooltip)
 [![npm](https://img.shields.io/npm/dm/@creativebulma/bulma-tooltip.svg)](https://www.npmjs.com/package/@creativebulma/bulma-tooltip)
+[![](https://data.jsdelivr.com/v1/package/npm/@creativebulma/bulma-tooltip/badge)](https://www.jsdelivr.com/package/npm/@creativebulma/bulma-tooltip)
 
 ---
 
