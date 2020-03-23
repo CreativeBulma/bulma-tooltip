@@ -26,7 +26,7 @@ npm install @creativebulma/bulma-tooltip
 {{< tab tabNum="2" >}}
 Use the [jsDelivr](https://jsdelivr.com) CDN to link to the BulmaTooltip stylesheet
 ```html
-https://jsdelivr.com/package/npm/@creativebulma/bulma-tootlip
+https://www.jsdelivr.com/package/npm/@creativebulma/bulma-tooltip
 ```
 {{< /tab >}}
 

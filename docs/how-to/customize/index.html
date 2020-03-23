@@ -118,9 +118,9 @@
 <p>There is 2 ways to customize it, depending on the way you integrate this component into your project.</p>
 <h2 id="sass">Sass</h2>
 <p>If you use the Sass source into your project, all you have to do is to customize variables before importing the component.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sass" data-lang="sass"><span style="color:#a6e22e">$tooltip-radius</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">6</span><span style="color:#66d9ef">px</span>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sass" data-lang="sass"><span style="color:#309">$tooltip-radius</span><span style="color:#555">:</span> <span style="color:#f60">6</span><span style="color:#078;font-weight:bold">px</span>
 
-<span style="color:#66d9ef">@import</span> <span style="color:#e6db74">&#39;@creativebulma/bulma-tooltip&#39;</span>
+<span style="color:#069;font-weight:bold">@import</span> <span style="color:#c30">&#39;@creativebulma/bulma-tooltip&#39;</span>
 </code></pre></div><h3 id="variables">Variables</h3>
 <table class="table is-hoverable">
     <thead>
@@ -197,13 +197,13 @@
 <h2 id="css">CSS</h2>
 <p>If you uses the CSS version you have to customize Sass source files then rebuild the CSS file.</p>
 <h3 id="first-lets-install-some-packages">First, let&rsquo;s install some packages!</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">npm install
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">npm install
 </code></pre></div><p>This command will install all development required package.</p>
 <h3 id="customize-1">Customize</h3>
 <p>Customize Sass variables defined wihtin <code>src/sass/_variables.sass</code> file.</p>
 <h3 id="build">Build</h3>
 <p>You can build CSS files by launching the build process with the command:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">npm run build
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">npm run build
 </code></pre></div><p>Styles are built using <code>node-sass</code> from <code>src/sass</code> directory and minify them.
 Built files will be copied into <code>/dist</code> directory (can be customized within package.json).</p>
 

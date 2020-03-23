@@ -2,6 +2,9 @@ baseURL = "https://demo.creativebulma.net/components/tooltip/1.0/"
 languageCode = "en-us"
 title = "BulmaTooltip"
 theme = "creativebulma"
+[markup]
+  [markup.highlight]
+    style = "manni"
 
 [menu]
 
