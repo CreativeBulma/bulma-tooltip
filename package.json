@@ -1,7 +1,7 @@
 {
 	"name": "@creativebulma/bulma-tooltip",
 	"description": "Display a tooltip attached to any kind of element, in different position.",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"homepage": "https://github.com/CreativeBulma/bulma-tooltip",
 	"author": {
 		"name": "Gaetan",

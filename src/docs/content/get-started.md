@@ -68,3 +68,9 @@ Tooltip supports colors modifier by adding one of the following classes to the H
 {{< preview id="colors" lang="html" >}}
 <p>Lorem ipsum <span class="has-tooltip-arrow has-tooltip-info" data-tooltip="Info tooltip content">dolor</span> sit amet, <span class="has-tooltip-arrow has-tooltip-warning" data-tooltip="Warning tooltip content">consectetur adipisicing elit</span>. Ipsa fugit <span class="has-tooltip-arrow has-tooltip-right has-tooltip-success" data-tooltip="Success tooltip content">dolores</span> earum quod distinctio ducimus non dignissimos <span class="has-tooltip-arrow has-tooltip-bottom has-tooltip-primary" data-tooltip="Primary tooltip content">molestias</span> amet corrupti voluptatum assumenda impedit beatae <span class="has-tooltip-arrow has-tooltip-left has-tooltip-danger" data-tooltip="Danger tooltip content">veritatis</span> nemo veniam error, hic cumque.</p>
 {{< /preview >}}
+
+### Always active
+You can set tooltip to be always visible by adding `has-tooltip-active` class on the element.
+{{< preview id="active" lang="html" >}}
+<p>Lorem ipsum dolor sit amet, <span class="has-tooltip-active" data-tooltip="Tooltip content">consectetur adipisicing elit</span>. Ipsa fugit dolores earum quod distinctio ducimus non dignissimos molestias amet corrupti voluptatum assumenda impedit beatae veritatis nemo veniam error, hic cumque.</p>
+{{< /preview >}}
