@@ -1,4 +1,5 @@
 const gulp = require('gulp');
+const internalIp = require('internal-ip');
 const package = require('./package.json');
 const path = require('path');
 const shell = require('gulp-shell');
@@ -137,7 +138,7 @@ gulp.task('doc:build', gulp.series(shell.task(['node_modules/.bin/hugo --source 
     done();
 });
 
-gulp.task('doc:serve', gulp.parallel(shell.task(['node_modules/.bin/hugo serve --source src/docs --watch']), function() {
+gulp.task('doc:serve', gulp.parallel(shell.task([`node_modules/.bin/hugo server -D --bind ${internalIp.v4.sync()} --baseURL ${internalIp.v4.sync()} --source src/docs --watch`]), function() {
     gulp.watch(path.resolve(__dirname, 'src/sass/**/*.sass'), gulp.series('build:styles'));
 }), done => {
     done();
