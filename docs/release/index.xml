@@ -6,7 +6,7 @@
     <description>Recent content in Releases on BulmaTooltip</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Mar 2020 10:46:47 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 29 Mar 2020 10:46:47 +0200</lastBuildDate>
     
 	<atom:link href="https://demo.creativebulma.net/components/tooltip/1.0/release/index.xml" rel="self" type="application/rss+xml" />
     
@@ -19,6 +19,26 @@
       <guid>https://demo.creativebulma.net/components/tooltip/1.0/release/1/</guid>
       <description>First working version
   added Styles : with or without arrow  added Multi-colors  added Position modifiers  </description>
+    </item>
+    
+    <item>
+      <title>(2020-03-29)</title>
+      <link>https://demo.creativebulma.net/components/tooltip/1.0/release/1.0.2/</link>
+      <pubDate>Sun, 29 Mar 2020 10:46:47 +0200</pubDate>
+      
+      <guid>https://demo.creativebulma.net/components/tooltip/1.0/release/1.0.2/</guid>
+      <description>Minor Fixes
+  fixed Tooltip remains visible after clicking a button  fixed docs - Test on LAN : Docs site is now availabel on LAN when using npm run doc:serve  fixed docs - Changelog display issue  </description>
+    </item>
+    
+    <item>
+      <title>(2020-03-29)</title>
+      <link>https://demo.creativebulma.net/components/tooltip/1.0/release/1.0.1/</link>
+      <pubDate>Sat, 21 Mar 2020 10:46:47 +0200</pubDate>
+      
+      <guid>https://demo.creativebulma.net/components/tooltip/1.0/release/1.0.1/</guid>
+      <description>Minor Fixes
+  fixed docs - Issue with generated site  </description>
     </item>
     
   </channel>
