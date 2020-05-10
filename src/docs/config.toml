@@ -1,10 +1,13 @@
-baseURL = "https://demo.creativebulma.net/components/tooltip/1.0/"
+baseURL = "https://demo.creativebulma.net/components/tooltip/1.1/"
 languageCode = "en-us"
 title = "BulmaTooltip"
 theme = "creativebulma"
 [markup]
   [markup.highlight]
     style = "manni"
+
+[params]
+  version = "1.1"
 
 [menu]
 

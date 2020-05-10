@@ -7,7 +7,6 @@ draft: false
 ---
 
 # Get started
-Although {{% link text="Bulma" href="https://bulma.io" target="_blank" %}} is a pure CSS Framework, modern Website and application use JavaScript to provide a friendlier experience. BulmaBoilerplate has been designed with that in mind and provides a clean structured project with modularity.
 
 **You only need 1 CSS file to use BulmaTooltip**
 
@@ -74,3 +73,34 @@ You can set tooltip to be always visible by adding `has-tooltip-active` class on
 {{< preview id="active" lang="html" >}}
 <p>Lorem ipsum dolor sit amet, <span class="has-tooltip-active" data-tooltip="Tooltip content">consectetur adipisicing elit</span>. Ipsa fugit dolores earum quod distinctio ducimus non dignissimos molestias amet corrupti voluptatum assumenda impedit beatae veritatis nemo veniam error, hic cumque.</p>
 {{< /preview >}}
+
+### Responsiveness
+#### Position
+Tooltip position can be based on responsiveness breakpoints by adding one of the following classes to the HTML element containing the tooltip:
+* `has-tooltip-#{$direction}-mobile`
+* `has-tooltip-#{$direction}-tablet`
+* `has-tooltip-#{$direction}-tablet-only`
+* `has-tooltip-#{$direction}-touch`
+* `has-tooltip-#{$direction}-desktop`
+* `has-tooltip-#{$direction}-desktop-only`
+* `has-tooltip-#{$direction}-until-widescreen`
+* `has-tooltip-#{$direction}-widescreen`
+* `has-tooltip-#{$direction}-widescreen-only`
+* `has-tooltip-#{$direction}-until-fullhd`
+* `has-tooltip-#{$direction}-fullhd`
+
+Don't forget to replace `#${direction}` by one of the avaiblable direction: `top`, `right`, `bottom`, `left`.
+
+
+#### Hide tooltip
+|Class|Mobile|Tablet|Desktop|Widescreen|FullHD|
+|--- |--- |--- |--- |--- |--- |
+|has-tooltip-hidden-mobile|{{< tag danger "hidden" >}}|{{< tag success "visible" >}}|{{< tag success "visible" >}}|{{< tag success "visible" >}}|{{< tag success "visible" >}}|
+|has-tooltip-hidden-tablet-only|{{< tag success "visible" >}}|{{< tag danger "hidden" >}}|{{< tag success "visible" >}}|{{< tag success "visible" >}}|{{< tag success "visible" >}}|
+|has-tooltip-hidden-desktop-only|{{< tag success "visible" >}}|{{< tag success "visible" >}}|{{< tag danger "hidden" >}}|{{< tag success "visible" >}}|{{< tag success "visible" >}}|
+|has-tooltip-hidden-widescreen-only|{{< tag success "visible" >}}|{{< tag success "visible" >}}|{{< tag success "visible" >}}|{{< tag danger "hidden" >}}|{{< tag success "visible" >}}|
+|has-tooltip-hidden-touch|{{< tag danger "hidden" >}}|{{< tag danger "hidden" >}}|{{< tag success "visible" >}}|{{< tag success "visible" >}}|{{< tag success "visible" >}}|
+|has-tooltip-hidden-tablet|{{< tag success "visible" >}}|{{< tag danger "hidden" >}}|{{< tag danger "hidden" >}}|{{< tag danger "hidden" >}}|{{< tag danger "hidden" >}}|
+|has-tooltip-hidden-desktop|{{< tag success "visible" >}}|{{< tag success "visible" >}}|{{< tag danger "hidden" >}}|{{< tag danger "hidden" >}}|{{< tag danger "hidden" >}}|
+|has-tooltip-hidden-widescreen|{{< tag success "visible" >}}|{{< tag success "visible" >}}|{{< tag success "visible" >}}|{{< tag danger "hidden" >}}|{{< tag danger "hidden" >}}|
+|has-tooltip-hidden-fullhd|{{< tag success "visible" >}}|{{< tag success "visible" >}}|{{< tag success "visible" >}}|{{< tag success "visible" >}}|{{< tag danger "hidden" >}}|

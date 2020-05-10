@@ -1,0 +1,22 @@
+<table class="table is-hoverable">
+    <thead>
+        <tr>
+            <th class="is-narrow">Option name</th>
+            <th>Description</th>
+            <th class="is-narrow">Type</th>
+            <th class="is-narrow">Default value</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{ range .Site.Data.options }}
+        <tr>
+            <td class="is-narrow has-background-light">{{ .name }}</td>
+            <td class="has-text-grey">{{ .description | $.Page.RenderString }}</td>
+            {{ if .type }}
+            <td class="is-narrow">{{ .type | $.Page.RenderString }}</td>
+            {{ end }}
+            <td class="is-narrow"><code>{{ .value }}</code></td>
+        </tr>
+        {{ end }}
+    </tbody>
+</table>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>How-tos on BulmaTooltip</title>
-    <link>https://demo.creativebulma.net/components/tooltip/1.0/how-to/</link>
+    <link>https://demo.creativebulma.net/components/tooltip/1.1/how-to/</link>
     <description>Recent content in How-tos on BulmaTooltip</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 21 Mar 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://demo.creativebulma.net/components/tooltip/1.0/how-to/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://demo.creativebulma.net/components/tooltip/1.1/how-to/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Customize</title>
-      <link>https://demo.creativebulma.net/components/tooltip/1.0/how-to/customize/</link>
+      <link>https://demo.creativebulma.net/components/tooltip/1.1/how-to/customize/</link>
       <pubDate>Sat, 21 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://demo.creativebulma.net/components/tooltip/1.0/how-to/customize/</guid>
+      <guid>https://demo.creativebulma.net/components/tooltip/1.1/how-to/customize/</guid>
       <description>How-To Customize This component has been designed to be easily customizable.
 There is 2 ways to customize it, depending on the way you integrate this component into your project.
 Sass If you use the Sass source into your project, all you have to do is to customize variables before importing the component.

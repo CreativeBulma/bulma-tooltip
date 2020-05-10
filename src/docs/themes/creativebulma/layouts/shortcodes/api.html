@@ -1,0 +1,71 @@
+
+{{ range .Site.Data.api }}
+	{{ if isset . "type" }}
+		<div class="symbol">
+			<span class="symbol-name">{{ .name }}</span>
+			<span class="symbol-separator">:</span>
+			<span class="symbol-type">{{ .type }}</span>
+			<span class="symbol-scope">
+				{{ if (eq .scope "constructor") }}
+				<div class="tag is-primary">{{ .scope }}</div>
+				{{ end }}
+				{{ if (eq .scope "private") }}
+				<div class="tag is-dark">{{ .scope }}</div>
+				{{ end }}
+				{{ if (eq .scope "public") }}
+				<div class="tag is-success">{{ .scope }}</div>
+				{{ end }}
+			</span>
+		</div>
+	{{ else }}
+		<div class="symbol">
+			<span class="symbol-name">{{ .name }}</span>
+			<span class="symbol-scope">
+				{{ if (eq .scope "constructor") }}
+				<div class="tag is-primary">{{ .scope }}</div>
+				{{ end }}
+				{{ if (eq .scope "private") }}
+				<div class="tag is-dark">{{ .scope }}</div>
+				{{ end }}
+				{{ if (eq .scope "public") }}
+				<div class="tag is-success">{{ .scope }}</div>
+				{{ end }}
+			</span>
+		</div>
+	{{ end }}
+	{{ if isset . "description" }}
+		<p>{{ .description | $.Page.RenderString }}</p>
+	{{ end }}
+	{{ if isset . "parameters" }}
+		<h5 class="title is-5">Parameters</h5>
+		{{ range .parameters }}
+			<nav class="level param is-mobile">
+				<div class="level-left">
+					<div class="level-item">
+						<span class="param-name">{{ .name }}</span>
+						<span class="param-separator">:</span>
+						<span class="param-type">{{ if .type }}{{ delimit .type "<span class='param-type-separator'>|</span>" }}{{ else }}void{{ end }}</span>
+					</div>
+				</div>
+				<div class="level-right">
+					<div class="level-item">
+						<p>
+							{{ if isset . "default" }}
+								<em>Default:</em>&nbsp;<span class="tag">{{ .default }}</span>
+							{{ end }}
+							{{ if isset . "required" }}
+								&nbsp;<span class="tag is-danger">Required</span>
+							{{ end }}
+						</p>
+					</div>
+				</div>
+			</nav>
+			<div class="param-description">{{ .description | $.Page.RenderString }}</div>
+		{{ end }}
+	{{ end }}
+	{{ if isset . "example" }}
+		<h5 class="title is-5">Example</h5>
+		{{ highlight .example "javascript" "" }}
+	{{ end }}
+	<hr class="is-small" />
+{{ end }}

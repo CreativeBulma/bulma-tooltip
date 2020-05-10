@@ -10,7 +10,7 @@
         {{ range .Site.Data.variables }}
         <tr>
             <td class="is-narrow">{{ .name }}</td>
-            <td>{{ .description }}</td>
+            <td>{{ .description | $.Page.RenderString }}</td>
             <td class="is-narrow"><code>{{ .value }}</code></td>
         </tr>
         {{ end }}

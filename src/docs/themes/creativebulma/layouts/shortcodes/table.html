@@ -1,0 +1,21 @@
+{{ $source := index .Site.Data (.Get "source") }}
+{{ $headers := $source.headers }}
+{{ $body := $source.body }}
+<table class="table is-hoverable">
+    <thead>
+        <tr>
+            {{ range $headers }}
+            <th>{{ .name }}</th>
+            {{ end }}
+        </tr>
+    </thead>
+    <tbody>
+        {{ range $body }}
+        <tr>
+            <td class="is-narrow has-background-light">{{ .name }}</td>
+            <td class="has-text-grey">{{ .description | $.Page.RenderString }}</td>
+            <td class="is-narrow">{{ highlight .example "javascript" "" }}</td>
+        </tr>
+        {{ end }}
+    </tbody>
+</table>

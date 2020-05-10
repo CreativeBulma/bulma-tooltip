@@ -32,3 +32,71 @@
 	&.has-tooltip-#{$direction}-fullhd
 		+fullhd
 			@include tooltip-direction(#{$direction})
+
+// Hidden breakpoints
+&.has-tooltip-hidden-mobile
+	+mobile
+		&::after,
+		&::before
+			opacity: 0 !important
+			display: none !important
+&.has-tooltip-hidden-tablet
+	+tablet
+		&::after,
+		&::before
+			opacity: 0 !important
+			display: none !important
+&.has-tooltip-hidden-tablet-only
+	+tablet-only
+		&::after,
+		&::before
+			opacity: 0 !important
+			display: none !important
+&.has-tooltip-hidden-touch
+	+touch
+		&::after,
+		&::before
+			opacity: 0 !important
+			display: none !important
+&.has-tooltip-hidden-desktop
+	+desktop
+		&::after,
+		&::before
+			opacity: 0 !important
+			display: none !important
+&.has-tooltip-hidden-desktop-only
+	+desktop-only
+		&::after,
+		&::before
+			opacity: 0 !important
+			display: none !important
+&.has-tooltip-hidden-until-widescreen
+	+until-widescreen
+		&::after,
+		&::before
+			opacity: 0 !important
+			display: none !important
+&.has-tooltip-hidden-widescreen
+	+widescreen
+		&::after,
+		&::before
+			opacity: 0 !important
+			display: none !important
+&.has-tooltip-hidden-widescreen-only
+	+widescreen-only
+		&::after,
+		&::before
+			opacity: 0 !important
+			display: none !important
+&.has-tooltip-hidden-until-fullhd
+	+until-fullhd
+		&::after,
+		&::before
+			opacity: 0 !important
+			display: none !important
+&.has-tooltip-hidden-fullhd
+	+fullhd
+		&::after,
+		&::before
+			opacity: 0 !important
+			display: none !important

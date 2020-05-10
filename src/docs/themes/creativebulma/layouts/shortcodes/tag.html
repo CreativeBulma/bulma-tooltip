@@ -1,4 +1,5 @@
 {{ $type := .Get 0 }}
+{{ $text := .Get 1 }}
 {{ with eq $type "added" }}
 <span class="tag is-capitalize is-info">{{ $type }}</span>
 {{ end }}
@@ -19,4 +20,16 @@
 {{ end }}
 {{ with eq $type "deprecated" }}
 <span class="tag is-capitalize is-black">{{ $type }}</span>
+{{ end }}
+{{ with eq $type "info" }}
+<span class="tag is-capitalize is-info">{{ $text }}</span>
+{{ end }}
+{{ with eq $type "success" }}
+<span class="tag is-capitalize is-success">{{ $text }}</span>
+{{ end }}
+{{ with eq $type "warning" }}
+<span class="tag is-capitalize is-warning">{{ $text }}</span>
+{{ end }}
+{{ with eq $type "danger" }}
+<span class="tag is-capitalize is-danger">{{ $text }}</span>
 {{ end }}

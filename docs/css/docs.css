@@ -2,6 +2,7 @@ html {
     font-size: 15px;
     font-weight: 400;
 }
+
 html,
 body,
 .is-fullheight {
@@ -9,15 +10,18 @@ body,
     min-height: 100%;
     overflow-y: auto;
 }
+
 body {
     background-color: #fff;
     color: #5a6270 !important;
-    font-family: Source Sans Pro,sans-serif;
+    font-family: Source Sans Pro, sans-serif;
 }
-.is-fullheight .navbar + .is-fullheight {
+
+.is-fullheight .navbar+.is-fullheight {
     height: calc(100% - 3.25rem);
     min-height: calc(100% - 3.25rem);
 }
+
 .brand {
     line-height: 1.5;
     padding: .5rem .75rem;
@@ -25,11 +29,22 @@ body {
     display: block;
     font-weight: 700;
 }
+
+.navbar a:not(.button) {
+    color: #5a6270 !important;
+    text-decoration: none;
+}
+.navbar a:not(.button):hover {
+    color: #6056FF !important;
+    text-decoration: none;
+}
+
 .content h1,
 .content h2 {
     font-weight: 500;
 }
-.content h1 + h2 {
+
+.content h1+h2 {
     margin-top: 0 !important;
     font-size: 1.3em;
     font-weight: 500;
@@ -37,57 +52,83 @@ body {
     padding-bottom: calc(1.45rem - 1px);
     border-bottom: 1px solid #dee2e7;
 }
-.content h2 + h3 {
+
+.content h2+h3 {
     margin-top: 0 !important;
     font-size: 1.125em;
     font-weight: 500;
     color: #5A6270;
     padding-bottom: calc(1.45rem - 1px);
 }
+
 .content h1,
 .content h2,
 .content h3 {
     color: #2f353f;
 }
+
 .content h4,
 .content h5,
 .content h6 {
     color: #5a6270;
+    margin: 1em 0 .8em 0;
 }
+
 a:not(.button) {
-    color: #6056FF !important;
+    color: #6056FF;
 }
+
 a:not(.button):hover {
     text-decoration: underline;
 }
+
 .menu-list {
     padding: 3rem 0;
 }
+
 .menu-list li ul {
     font-size: .85rem;
 }
+
 .menu-item:not(.has-dropdown) {
     padding: .5rem 1rem;
 }
+
 .menu {
     background-color: transparent !important;
     box-shadow: none !important;
     border-right: 1px solid #DEE2E7;
     overflow-y: auto;
 }
+
 .menu a {
     color: #5a6270 !important;
 }
+
 .menu a:hover {
     text-decoration: none;
 }
+
 ol li {
     margin-bottom: 1.25em;
 }
-code, kbd, pre, samp {
+
+hr {
+    margin: 4rem 0;
+}
+hr.is-small {
+    margin: 2rem 0;
+    margin-bottom: 1rem;
+}
+
+code,
+kbd,
+pre,
+samp {
     font-family: "Consolas", menlo, monospace;
     font-size: 92%;
 }
+
 code {
     padding: .1em .3em;
     border-radius: .3em;
@@ -96,7 +137,8 @@ code {
     background: #ebeef0;
     overflow-x: auto;
 }
-code + .copy-to-clipboard {
+
+code+.copy-to-clipboard {
     margin-left: -1px;
     border-left: 0 !important;
     font-size: inherit !important;
@@ -104,6 +146,7 @@ code + .copy-to-clipboard {
     height: 24px;
     top: 0;
 }
+
 pre {
     padding: 1rem;
     background: #f5f6fa !important;
@@ -113,6 +156,7 @@ pre {
     position: relative;
     border: 1px solid rgb(222, 226, 231);
 }
+
 pre code {
     color: #586e75;
     background: inherit;
@@ -127,6 +171,7 @@ pre code {
     display: block;
     overflow: auto;
 }
+
 .copy-to-clipboard {
     background-image: url(../images/clippy.svg);
     background-position: 50% 50%;
@@ -145,9 +190,11 @@ pre code {
     border-radius: 0 2px 2px 0;
     margin-bottom: 1px;
 }
+
 .copy-to-clipboard:hover {
     background-color: #E8E2CD;
 }
+
 pre .copy-to-clipboard {
     position: absolute;
     right: 4px;
@@ -156,6 +203,7 @@ pre .copy-to-clipboard {
     color: #ccc;
     border-radius: 2px;
 }
+
 pre .copy-to-clipboard:hover {
     background-color: whitesmoke;
     color: #fff !important;
@@ -168,78 +216,160 @@ pre .copy-to-clipboard:hover {
 }
 
 .notification.is-white {
-border-left-color: white;
+    border-left-color: white;
 }
 
 .notification.is-black {
-border-left-color: #0a0a0a;
+    border-left-color: #0a0a0a;
 }
 
 .notification.is-light {
-border-left-color: whitesmoke;
+    border-left-color: whitesmoke;
 }
 
 .notification.is-dark {
-border-left-color: #2f3d4a;
+    border-left-color: #2f3d4a;
 }
 
 .notification.is-primary {
-border-left-color: #6056FF;
+    border-left-color: #6056FF;
 }
 
 .notification.is-link {
-border-left-color: #3273dc;
+    border-left-color: #3273dc;
 }
 
 .notification.is-info {
-border-left-color: #37aee3;
+    border-left-color: #37aee3;
 }
 
 .notification.is-success {
-border-left-color: #26c6da;
+    border-left-color: #26c6da;
 }
 
 .notification.is-warning {
-border-left-color: #ffb22b;
+    border-left-color: #ffb22b;
 }
 
 .notification.is-danger {
-border-left-color: #ef5350;
+    border-left-color: #ef5350;
 }
+
 .tabs {
     margin-bottom: 0 !important;
 }
+
 .tabs ul {
     margin-left: 0;
     margin-top: 0;
 }
+
 .tabs ul li a {
     color: #5a6270 !important;
     border-bottom: 2px solid transparent;
     padding: 1em;
 }
+
 .tabs ul li.is-active a {
     color: #6056FF !important;
     border-bottom-color: #6056FF !important;
 }
+
 .tabs ul li a:hover {
     text-decoration: none;
 }
+
 .tab-content .tab-pane {
     display: none;
     padding: 1em;
 }
+
 .tab-content .tab-pane.is-active {
     display: block;
 }
+
 .preview {
     border: 1px solid rgb(222, 226, 231);
     border-radius: 3px;
     margin-bottom: 1.5rem;
 }
+
 .preview .tab-content .tab-pane:nth-child(2) {
     background-color: #f5f6fa;
 }
+
 .preview .tab-content .tab-pane:nth-child(2) pre {
     border: none !important;
+}
+
+.content table td {
+    padding: 1.25em .75em;
+}
+
+.symbol {
+    display: block;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    text-decoration: none !important;
+}
+
+.symbol .symbol-name {
+    font-size: 85.4%;
+    font-weight: 700;
+    color: #050607;
+    padding: 2px 5px 3px;
+    background-color: rgba(238, 240, 244, 0.74);
+    border-radius: 3px;
+}
+
+.symbol .symbol-separator {
+    background-color: transparent;
+    color: #aaafbd;
+}
+
+.symbol .symbol-type {
+    color: #7e879c;
+    font-weight: 400;
+    background-color: transparent;
+}
+
+
+.param {
+    margin-bottom: .5rem !important;
+}
+
+.param+.param-description {
+    margin-bottom: 1.5rem;
+}
+
+.param-name,
+.param-type {
+    font-size: 85.4%;
+    font-weight: 700;
+    color: #050607;
+    padding: 2px 5px 3px;
+    background-color: rgba(238, 240, 244, 0.74);
+    border-radius: 3px;
+}
+
+.param-type {
+    font-size: 1em;
+    font-weight: 400;
+    color: #37aee3;
+}
+
+.param-type .param-type-separator {
+    color: #7a7a7a;
+}
+
+.param-separator {
+    background-color: transparent;
+    color: #aaafbd;
+    margin: .25rem;
+}
+
+.param-description {
+    padding: 10px 20px 7px;
+    border-top: 1px solid #eef0f5 !important;
+    background: #fbfbfb;
 }

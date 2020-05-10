@@ -4,13 +4,13 @@
 
 {{ if eq $tab "1" }}
 <div class="tab-pane is-active" id="tab{{ $tabID }}" role="tabpanel" aria-labelledby="nav-{{ $tabName }}">
-	{{ $.Inner | markdownify }}
+	{{ $.Page.RenderString $.Inner }}
 </div>
 
 {{ else }}
 
 <div class="tab-pane" id="tab{{ $tabID }}" role="tabpanel" aria-labelledby="nav-{{ $tabName }}">
-	{{ $.Inner | markdownify }}
+	{{ $.Page.RenderString $.Inner }}
 </div>
 
 {{ end }}
