@@ -3,10 +3,5 @@
         "name": "github",
         "title" : "Github repository",
         "url": "https://github.com/CreativeBulma/bulma-tooltip"
-    },
-    {
-        "name": "twitter",
-        "title" : "Follow us on Twitter",
-        "url": "https://twitter.com/CreativeBulma"
     }
 ]
