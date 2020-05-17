@@ -78,6 +78,16 @@
 		&.has-tooltip-multiline
 			+tooltip-multiline
 
+		&.has-tooltip-text-left
+			&::before
+				text-align: left
+		&.has-tooltip-text-centered
+			&::before
+				text-align: center
+		&.has-tooltip-text-right
+			&::before
+				text-align: right
+
 		@each $name, $pair in $colors
 			$color: nth($pair, 1)
 			$color-invert: nth($pair, 2)

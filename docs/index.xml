@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Introduction on BulmaTooltip</title>
-    <link>https://demo.creativebulma.net/components/tooltip/1.1/</link>
+    <link>https://demo.creativebulma.net/components/tooltip/1.2/</link>
     <description>Recent content in Introduction on BulmaTooltip</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 21 Mar 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://demo.creativebulma.net/components/tooltip/1.1/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://demo.creativebulma.net/components/tooltip/1.2/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>(2020-03-21)</title>
-      <link>https://demo.creativebulma.net/components/tooltip/1.1/release/1/</link>
+      <link>https://demo.creativebulma.net/components/tooltip/1.2/release/1/</link>
       <pubDate>Sat, 21 Mar 2020 10:46:47 +0200</pubDate>
       
-      <guid>https://demo.creativebulma.net/components/tooltip/1.1/release/1/</guid>
+      <guid>https://demo.creativebulma.net/components/tooltip/1.2/release/1/</guid>
       <description>First working version
   added Styles : with or without arrow  added Multi-colors  added Position modifiers  </description>
     </item>
     
     <item>
       <title>Customize</title>
-      <link>https://demo.creativebulma.net/components/tooltip/1.1/how-to/customize/</link>
+      <link>https://demo.creativebulma.net/components/tooltip/1.2/how-to/customize/</link>
       <pubDate>Sat, 21 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://demo.creativebulma.net/components/tooltip/1.1/how-to/customize/</guid>
+      <guid>https://demo.creativebulma.net/components/tooltip/1.2/how-to/customize/</guid>
       <description>How-To Customize This component has been designed to be easily customizable.
 There is 2 ways to customize it, depending on the way you integrate this component into your project.
 Sass If you use the Sass source into your project, all you have to do is to customize variables before importing the component.
@@ -34,31 +34,41 @@ $tooltip-radius: 6px @import &amp;#39;@creativebulma/bulma-tooltip&amp;#39; Vari
     </item>
     
     <item>
+      <title>(2020-05-17)</title>
+      <link>https://demo.creativebulma.net/components/tooltip/1.2/release/1.2/</link>
+      <pubDate>Sun, 17 May 2020 11:46:47 +0200</pubDate>
+      
+      <guid>https://demo.creativebulma.net/components/tooltip/1.2/release/1.2/</guid>
+      <description>New modifiers and better multiline support
+  added New sass variables to customize tooltip fade animation  added New modifier to change tooltip text alignment  docs Add missing multiline tooltip documentation  </description>
+    </item>
+    
+    <item>
       <title>(2020-05-10)</title>
-      <link>https://demo.creativebulma.net/components/tooltip/1.1/release/1.1.0/</link>
+      <link>https://demo.creativebulma.net/components/tooltip/1.2/release/1.1.0/</link>
       <pubDate>Sun, 10 May 2020 11:46:47 +0200</pubDate>
       
-      <guid>https://demo.creativebulma.net/components/tooltip/1.1/release/1.1.0/</guid>
+      <guid>https://demo.creativebulma.net/components/tooltip/1.2/release/1.1.0/</guid>
       <description>New helpers and fixes
   fixed Issues with combination of arrow and directions options  added helpers - New helper to hide tooltip on specific breakpoints  docs Add missing responsiveness documentation  </description>
     </item>
     
     <item>
       <title>(2020-03-29)</title>
-      <link>https://demo.creativebulma.net/components/tooltip/1.1/release/1.0.2/</link>
+      <link>https://demo.creativebulma.net/components/tooltip/1.2/release/1.0.2/</link>
       <pubDate>Sun, 29 Mar 2020 10:46:47 +0200</pubDate>
       
-      <guid>https://demo.creativebulma.net/components/tooltip/1.1/release/1.0.2/</guid>
+      <guid>https://demo.creativebulma.net/components/tooltip/1.2/release/1.0.2/</guid>
       <description>Minor Fixes
   fixed Tooltip remains visible after clicking a button  fixed docs - Test on LAN : Docs site is now availabel on LAN when using npm run doc:serve  fixed docs - Changelog display issue  </description>
     </item>
     
     <item>
       <title>Get Started</title>
-      <link>https://demo.creativebulma.net/components/tooltip/1.1/get-started/</link>
+      <link>https://demo.creativebulma.net/components/tooltip/1.2/get-started/</link>
       <pubDate>Sat, 21 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://demo.creativebulma.net/components/tooltip/1.1/get-started/</guid>
+      <guid>https://demo.creativebulma.net/components/tooltip/1.2/get-started/</guid>
       <description>Get started You only need 1 CSS file to use BulmaTooltip
 Installation First, let&amp;rsquo;s install the component! There are several ways to get started with BulmaTooltip.
  1. NPM  2. CDN  3. Github    Use npm to install the bulma-tooltip package recommended
@@ -68,23 +78,23 @@ https://www.jsdelivr.com/package/npm/@creativebulma/bulma-tooltip   Use the GitH
     
     <item>
       <title>(2020-03-29)</title>
-      <link>https://demo.creativebulma.net/components/tooltip/1.1/release/1.0.1/</link>
+      <link>https://demo.creativebulma.net/components/tooltip/1.2/release/1.0.1/</link>
       <pubDate>Sat, 21 Mar 2020 10:46:47 +0200</pubDate>
       
-      <guid>https://demo.creativebulma.net/components/tooltip/1.1/release/1.0.1/</guid>
+      <guid>https://demo.creativebulma.net/components/tooltip/1.2/release/1.0.1/</guid>
       <description>Minor Fixes
   fixed docs - Issue with generated site  </description>
     </item>
     
     <item>
       <title>Changelog</title>
-      <link>https://demo.creativebulma.net/components/tooltip/1.1/changelog/</link>
+      <link>https://demo.creativebulma.net/components/tooltip/1.2/changelog/</link>
       <pubDate>Sat, 21 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://demo.creativebulma.net/components/tooltip/1.1/changelog/</guid>
-      <description>Changelog  v1.1.0 (2020-05-10)    New helpers and fixes
-  fixed Issues with combination of arrow and directions options  added helpers - New helper to hide tooltip on specific breakpoints  docs Add missing responsiveness documentation      v1.0.2 (2020-03-29)    Minor Fixes
-  fixed Tooltip remains visible after clicking a button  fixed docs - Test on LAN : Docs site is now availabel on LAN when using npm run doc:serve  fixed docs - Changelog display issue      v1.</description>
+      <guid>https://demo.creativebulma.net/components/tooltip/1.2/changelog/</guid>
+      <description>Changelog  v1.2.0 (2020-05-17)    New modifiers and better multiline support
+  added New sass variables to customize tooltip fade animation  added New modifier to change tooltip text alignment  docs Add missing multiline tooltip documentation      v1.1.0 (2020-05-10)    New helpers and fixes
+  fixed Issues with combination of arrow and directions options  added helpers - New helper to hide tooltip on specific breakpoints  docs Add missing responsiveness documentation      v1.</description>
     </item>
     
   </channel>

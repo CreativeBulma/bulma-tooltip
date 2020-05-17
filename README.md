@@ -14,10 +14,10 @@ This component extends [Bulma CSS Framework](https://bulma.io) and requires it t
 ```shell
 npm i -D @creativebulma/bulma-tooltip
 ```
-Full installation steps can be found here: [installation steps](https://demo.creativebulma.net/components/tooltip/1.1/get-started)
+Full installation steps can be found here: [installation steps](https://demo.creativebulma.net/components/tooltip/1.2/get-started)
 
 ## Documentation & Demo
-Full documentation and demo are available [here](https://demo.creativebulma.net/components/tooltip/1.1/get-started)
+Full documentation and demo are available [here](https://demo.creativebulma.net/components/tooltip/1.2/get-started)
 
 ## About the project
 BulmaBoilerplate is © 2020 by [CreativeBulma](https://creativebulma.net).

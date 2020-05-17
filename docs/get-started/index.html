@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <base href="https://demo.creativebulma.net/components/tooltip/1.1/">
+    <base href="https://demo.creativebulma.net/components/tooltip/1.2/">
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
@@ -11,11 +11,11 @@
     
     <title>Get Started - BulmaTooltip</title>
 
-    <link rel="icon" href="https://demo.creativebulma.net/components/tooltip/1.1/favicon.png">
+    <link rel="icon" href="https://demo.creativebulma.net/components/tooltip/1.2/favicon.png">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-    <link rel="stylesheet" href="/components/tooltip/1.1/css/docs.css" />
-    <link rel="stylesheet" href="/components/tooltip/1.1/css/bulma-tooltip.min.css" />
+    <link rel="stylesheet" href="/components/tooltip/1.2/css/docs.css" />
+    <link rel="stylesheet" href="/components/tooltip/1.2/css/bulma-tooltip.min.css" />
 
     
 
@@ -33,7 +33,7 @@
         </div>
         <div class="columns is-gapless is-fullheight">
             <div id="doc-menu" class="column is-2 menu is-mobile">
-                <a href="https://demo.creativebulma.net/components/tooltip/1.1/" class="brand">
+                <a href="https://demo.creativebulma.net/components/tooltip/1.2/" class="brand">
     <span class="title is-6 has-text-weight-normal">BulmaTooltip</span>
     <span class="subtitle tag is-primary is-light is-7 has-text-weight-light is-uppercase">docs</span>
 </a>
@@ -43,7 +43,7 @@
     
         
             <li class="">
-                <a href="/components/tooltip/1.1/" class="menu-item">
+                <a href="/components/tooltip/1.2/" class="menu-item">
                     
                     <span>Introduction</span>
                 </a>
@@ -52,7 +52,7 @@
     
         
             <li class="">
-                <a href="/components/tooltip/1.1/get-started/" class="menu-item">
+                <a href="/components/tooltip/1.2/get-started/" class="menu-item">
                     
                     <span>Get Started</span>
                 </a>
@@ -69,7 +69,7 @@
                 <ul class="menu-dropdown">
                     
                         <li class="">
-                            <a href="/components/tooltip/1.1/how-to/customize/" class="menu-item">Customize</a>
+                            <a href="/components/tooltip/1.2/how-to/customize/" class="menu-item">Customize</a>
                         </li>
                     
                 </ul>
@@ -78,7 +78,7 @@
     
         
             <li class="">
-                <a href="/components/tooltip/1.1/changelog/" class="menu-item">
+                <a href="/components/tooltip/1.2/changelog/" class="menu-item">
                     
                     <span>Changelog</span>
                 </a>
@@ -99,6 +99,8 @@
                 <a class="navbar-link">Version 1.1</a>
 
                 <div class="navbar-dropdown">
+                    
+                    <a href="https://demo.creativebulma.net/components/tooltip/1.2/" class="navbar-item">v1.2</a>
                     
                     <a href="https://demo.creativebulma.net/components/tooltip/1.1/" class="navbar-item">v1.1</a>
                     
@@ -349,6 +351,42 @@
         </div>
     </div>
 </div></p>
+<h3 id="multiline">Multiline</h3>
+<p>Display long tooltip content by adding <code>has-tooltip-multiline</code> class on the element.</p>
+<p>You can change tooltip text alignement by adding <code>has-tooltip-text-left</code>, <code>has-tooltip-text-centered</code> or <code>has-tooltip-text-right</code> modifier.
+
+
+
+  
+
+
+
+<div class="preview">
+    <div class="tabs">
+        <ul>
+            <li class="is-active" data-toggle="tab" data-target="#previewmultiline" role="tab" aria-selected="true">
+                <a>Preview</a>
+            </li>
+            
+            <li data-toggle="tab" data-target="#previewCodemultiline" role="tab" aria-selected="false">
+                <a>Code</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="tab-content" id="preview-multiline">
+        <div class="tab-pane is-active" id="previewmultiline" role="tabpanel" aria-labelledby="preview-multiline">
+            
+<p>Lorem ipsum dolor sit amet, <span class="has-tooltip-arrow has-tooltipl-multiline" data-tooltip="Multiline&#10;Content&#10;World!">consectetur adipisicing elit</span>. Ipsa fugit dolores earum quod distinctio ducimus non dignissimos molestias amet corrupti voluptatum assumenda impedit beatae veritatis nemo veniam error, hic cumque.</p>
+
+        </div>
+        <div class="tab-pane" id="previewCodemultiline" role="tabpanel" aria-labelledby="preview-code-multiline">
+            <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">
+&lt;<span style="color:#309;font-weight:bold">p</span>&gt;Lorem ipsum dolor sit amet, &lt;<span style="color:#309;font-weight:bold">span</span> <span style="color:#309">class</span><span style="color:#555">=</span><span style="color:#c30">&#34;has-tooltip-arrow has-tooltipl-multiline&#34;</span> <span style="color:#309">data-tooltip</span><span style="color:#555">=</span><span style="color:#c30">&#34;Multiline&amp;#10;Content&amp;#10;World!&#34;</span>&gt;consectetur adipisicing elit&lt;/<span style="color:#309;font-weight:bold">span</span>&gt;. Ipsa fugit dolores earum quod distinctio ducimus non dignissimos molestias amet corrupti voluptatum assumenda impedit beatae veritatis nemo veniam error, hic cumque.&lt;/<span style="color:#309;font-weight:bold">p</span>&gt;
+</code></pre></div>
+        </div>
+    </div>
+</div></p>
 <h3 id="colors">Colors</h3>
 <p>Tooltip supports colors modifier by adding one of the following classes to the HTML element containing the tooltip: <code>has-tooltip-info</code>, <code>has-tooltip-warning</code>, <code>has-tooltip-primary</code>, <code>has-tooltip-success</code>, <code>has-tooltip-danger</code>.
 
@@ -436,6 +474,21 @@
 <li><code>has-tooltip-#{$direction}-fullhd</code></li>
 </ul>
 <p>Don&rsquo;t forget to replace <code>#${direction}</code> by one of the avaiblable direction: <code>top</code>, <code>right</code>, <code>bottom</code>, <code>left</code>.</p>
+<h3 id="text-alignement">Text alignement</h3>
+<ul>
+<li><code>has-tooltip-text-#{$direction}-mobile</code></li>
+<li><code>has-tooltip-text-#{$direction}-tablet</code></li>
+<li><code>has-tooltip-text-#{$direction}-tablet-only</code></li>
+<li><code>has-tooltip-text-#{$direction}-touch</code></li>
+<li><code>has-tooltip-text-#{$direction}-desktop</code></li>
+<li><code>has-tooltip-text-#{$direction}-desktop-only</code></li>
+<li><code>has-tooltip-text-#{$direction}-until-widescreen</code></li>
+<li><code>has-tooltip-text-#{$direction}-widescreen</code></li>
+<li><code>has-tooltip-text-#{$direction}-widescreen-only</code></li>
+<li><code>has-tooltip-text-#{$direction}-until-fullhd</code></li>
+<li><code>has-tooltip-text-#{$direction}-fullhd</code></li>
+</ul>
+<p>Don&rsquo;t forget to replace <code>#${direction}</code> by one of the avaiblable direction: <code>left</code>, <code>centered</code>, <code>right</code>.</p>
 <h4 id="hide-tooltip">Hide tooltip</h4>
 <table>
 <thead>
@@ -1160,8 +1213,8 @@
         </div>
     </div>
 
-<script src="/components/tooltip/1.1/js/clipboard.min.js" type="text/javascript"></script>
-    <script async src="/components/tooltip/1.1/js/docs.js" type="text/javascript"></script>
+<script src="/components/tooltip/1.2/js/clipboard.min.js" type="text/javascript"></script>
+    <script async src="/components/tooltip/1.2/js/docs.js" type="text/javascript"></script>
     
 </body>
 

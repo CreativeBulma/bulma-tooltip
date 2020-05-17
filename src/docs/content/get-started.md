@@ -62,6 +62,14 @@ Tooltip position can be changed by adding one of the following classes to the HT
 <p>Lorem ipsum dolor sit amet, <span class="has-tooltip-arrow" data-tooltip="Tooltip content on top">consectetur adipisicing elit</span>. Ipsa fugit <span class="has-tooltip-arrow has-tooltip-right" data-tooltip="Right tooltip content">dolores</span> earum quod distinctio ducimus non dignissimos <span class="has-tooltip-arrow has-tooltip-bottom" data-tooltip="Bottom tooltip content">molestias</span> amet corrupti voluptatum assumenda impedit beatae <span class="has-tooltip-arrow has-tooltip-left" data-tooltip="Left tooltip content">veritatis</span> nemo veniam error, hic cumque.</p>
 {{< /preview >}}
 
+### Multiline
+Display long tooltip content by adding `has-tooltip-multiline` class on the element.
+
+You can change tooltip text alignement by adding `has-tooltip-text-left`, `has-tooltip-text-centered` or `has-tooltip-text-right` modifier.
+{{< preview id="multiline" lang="html" >}}
+<p>Lorem ipsum dolor sit amet, <span class="has-tooltip-arrow has-tooltipl-multiline" data-tooltip="Multiline&#10;Content&#10;World!">consectetur adipisicing elit</span>. Ipsa fugit dolores earum quod distinctio ducimus non dignissimos molestias amet corrupti voluptatum assumenda impedit beatae veritatis nemo veniam error, hic cumque.</p>
+{{< /preview >}}
+
 ### Colors
 Tooltip supports colors modifier by adding one of the following classes to the HTML element containing the tooltip: `has-tooltip-info`, `has-tooltip-warning`, `has-tooltip-primary`, `has-tooltip-success`, `has-tooltip-danger`.
 {{< preview id="colors" lang="html" >}}
@@ -91,6 +99,20 @@ Tooltip position can be based on responsiveness breakpoints by adding one of the
 
 Don't forget to replace `#${direction}` by one of the avaiblable direction: `top`, `right`, `bottom`, `left`.
 
+### Text alignement
+* `has-tooltip-text-#{$direction}-mobile`
+* `has-tooltip-text-#{$direction}-tablet`
+* `has-tooltip-text-#{$direction}-tablet-only`
+* `has-tooltip-text-#{$direction}-touch`
+* `has-tooltip-text-#{$direction}-desktop`
+* `has-tooltip-text-#{$direction}-desktop-only`
+* `has-tooltip-text-#{$direction}-until-widescreen`
+* `has-tooltip-text-#{$direction}-widescreen`
+* `has-tooltip-text-#{$direction}-widescreen-only`
+* `has-tooltip-text-#{$direction}-until-fullhd`
+* `has-tooltip-text-#{$direction}-fullhd`
+
+Don't forget to replace `#${direction}` by one of the avaiblable direction: `left`, `centered`, `right`.
 
 #### Hide tooltip
 |Class|Mobile|Tablet|Desktop|Widescreen|FullHD|

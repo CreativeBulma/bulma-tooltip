@@ -1,4 +1,4 @@
-baseURL = "https://demo.creativebulma.net/components/tooltip/1.1/"
+baseURL = "https://demo.creativebulma.net/components/tooltip/1.2/"
 languageCode = "en-us"
 title = "BulmaTooltip"
 theme = "creativebulma"
