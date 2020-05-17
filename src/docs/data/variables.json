@@ -1,5 +1,15 @@
 [
     {
+        "name": "$tooltip-animation-duration",
+        "description": "",
+        "value": ".3s"
+    },
+    {
+        "name": "animation-transition-timing-function",
+        "description": "",
+        "value": "linear"
+    },
+    {
         "name": "$tooltip-arrow-size",
         "description": "",
         "value": "6px"

@@ -30,7 +30,7 @@
       <description>How-To Customize This component has been designed to be easily customizable.
 There is 2 ways to customize it, depending on the way you integrate this component into your project.
 Sass If you use the Sass source into your project, all you have to do is to customize variables before importing the component.
-$tooltip-radius: 6px @import &amp;#39;@creativebulma/bulma-tooltip&amp;#39; Variables   Variable name Description Default value     $tooltip-arrow-size  6px   $tooltip-background-color  $grey-dark   $tooltip-background-opacity  0.</description>
+$tooltip-radius: 6px @import &amp;#39;@creativebulma/bulma-tooltip&amp;#39; Variables   Variable name Description Default value     $tooltip-animation-duration  .</description>
     </item>
     
     <item>

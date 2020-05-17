@@ -443,7 +443,7 @@
 
 /* line 2, src/sass/_animation.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-fade::before, [data-tooltip]:not(.is-loading).has-tooltip-fade::after, [data-tooltip]:not(.is-disabled).has-tooltip-fade::before, [data-tooltip]:not(.is-disabled).has-tooltip-fade::after, [data-tooltip]:not([disabled]).has-tooltip-fade::before, [data-tooltip]:not([disabled]).has-tooltip-fade::after {
-  transition: opacity .3s linear, visibility .3s linear;
+  transition: opacity 0.3s linear, visibility 0.3s linear;
 }
 
 @media screen and (max-width: 768px) {
