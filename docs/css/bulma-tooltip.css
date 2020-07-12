@@ -45,7 +45,7 @@
   content: attr(data-tooltip);
   padding: 0.5rem 1rem;
   text-overflow: ellipsis;
-  white-space: pre;
+  white-space: pre-line;
 }
 
 /* line 22, src/sass/_position.sass */
