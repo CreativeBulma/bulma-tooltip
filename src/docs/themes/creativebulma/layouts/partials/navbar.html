@@ -3,22 +3,6 @@
         <div class="navbar-start">
         </div>
         <div class="navbar-end">
-            {{ $len := (len .Site.Data.versions) }}
-            {{ if ge $len 2 }}
-            <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link">Version {{ .Site.Params.version }}</a>
-
-                <div class="navbar-dropdown">
-                    {{ range .Site.Data.versions }}
-                    <a href="{{ .url }}" class="navbar-item">{{ .version }}</a>
-                    {{end}}
-                </div>
-            </div>
-            {{ else }}
-            <div class="navbar-item">
-                <span >Version {{ .Site.Params.version }}</span>
-            </div>
-            {{ end }}
             {{ range .Site.Data.social }}
             <a class="navbar-item is-square" href="{{ .url }}" alt="{{ .title }}" target="_blank">
                 <span class="icon">
