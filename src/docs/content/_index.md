@@ -12,7 +12,7 @@ draft: false
 BulmaTooltip is a pure CSS {{% link text="Bulma" href="https://bulma.io" target="_blank" %}} extension which brings the ability to **easily display a tooltip attached to any kind of element, in different position**.
 
 ## License
-BulmaTootlip is © 2020 by [CreativeBulma](https://creativebulma.net).
+BulmaTootlip is © 2020 by [CreativeBulma](https://github.com/CreativeBulma).
 
 BulmaTootlip is distributed under [MIT](https://github.com/CreativeBulma/bulma-tooltip/blob/master/LICENSE) license.
 
