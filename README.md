@@ -22,8 +22,6 @@ Full documentation and demo are available [here](https://bulma-tooltip.netlify.a
 ## About the project
 BulmaBoilerplate is © 2020 by [CreativeBulma](https://github.com/CreativeBulma).
 
-**If you enjoy this component, have a look at our [MarketPlace](https://creativebulma.net) and discover Free and Premium Bulma components and Templates.**
-
 ## License
 BulmaBoilerplate is distributed under [MIT](https://github.com/CreativeBulma/bulma-tooltip/blob/master/LICENSE) license.
 
