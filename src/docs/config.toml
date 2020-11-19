@@ -1,4 +1,4 @@
-baseURL = "https://demo.creativebulma.net/components/tooltip/1.2/"
+baseURL = "https://bulma-tooltip.netlify.app/"
 languageCode = "en-us"
 title = "BulmaTooltip"
 theme = "creativebulma"
