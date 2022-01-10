@@ -1,4 +1,4 @@
-/*! @creativebulma/bulma-tooltip v1.2.0 | (c) 2020 Gaetan | MIT License | https://github.com/CreativeBulma/bulma-tooltip */
+/*! @creativebulma/bulma-tooltip v1.2.0 | (c) 2022 Gaetan | MIT License | https://github.com/CreativeBulma/bulma-tooltip */
 @-webkit-keyframes spinAround {
   from {
     transform: rotate(0deg);
@@ -17,7 +17,7 @@
   }
 }
 
-/* line 67, src/sass/app.sass */
+/* line 68, src/sass/app.sass */
 [data-tooltip]:not(.is-loading), [data-tooltip]:not(.is-disabled), [data-tooltip]:not([disabled]) {
   cursor: pointer;
   overflow: visible;
@@ -46,6 +46,7 @@
   padding: 0.5rem 1rem;
   text-overflow: ellipsis;
   white-space: pre-line;
+  transition-delay: 0s;
 }
 
 /* line 22, src/sass/_position.sass */
@@ -165,7 +166,7 @@
   transform: translate(100%, 50%);
 }
 
-/* line 58, src/sass/app.sass */
+/* line 59, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-multiline::before, [data-tooltip]:not(.is-disabled).has-tooltip-multiline::before, [data-tooltip]:not([disabled]).has-tooltip-multiline::before {
   height: auto;
   width: 15rem;
@@ -175,276 +176,276 @@
   word-break: keep-all;
 }
 
-/* line 91, src/sass/app.sass */
+/* line 93, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-text-left::before, [data-tooltip]:not(.is-disabled).has-tooltip-text-left::before, [data-tooltip]:not([disabled]).has-tooltip-text-left::before {
   text-align: left;
 }
 
-/* line 94, src/sass/app.sass */
+/* line 96, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-text-centered::before, [data-tooltip]:not(.is-disabled).has-tooltip-text-centered::before, [data-tooltip]:not([disabled]).has-tooltip-text-centered::before {
   text-align: center;
 }
 
-/* line 97, src/sass/app.sass */
+/* line 99, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-text-right::before, [data-tooltip]:not(.is-disabled).has-tooltip-text-right::before, [data-tooltip]:not([disabled]).has-tooltip-text-right::before {
   text-align: right;
 }
 
-/* line 104, src/sass/app.sass */
+/* line 106, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-white::after, [data-tooltip]:not(.is-disabled).has-tooltip-white::after, [data-tooltip]:not([disabled]).has-tooltip-white::after {
   border-color: rgba(255, 255, 255, 0.9) transparent transparent transparent !important;
 }
 
-/* line 107, src/sass/app.sass */
+/* line 109, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-white.has-tooltip-bottom::after, [data-tooltip]:not(.is-disabled).has-tooltip-white.has-tooltip-bottom::after, [data-tooltip]:not([disabled]).has-tooltip-white.has-tooltip-bottom::after {
   border-color: transparent transparent rgba(255, 255, 255, 0.9) transparent !important;
 }
 
-/* line 110, src/sass/app.sass */
+/* line 112, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-white.has-tooltip-left::after, [data-tooltip]:not(.is-disabled).has-tooltip-white.has-tooltip-left::after, [data-tooltip]:not([disabled]).has-tooltip-white.has-tooltip-left::after {
   border-color: transparent transparent transparent rgba(255, 255, 255, 0.9) !important;
 }
 
-/* line 113, src/sass/app.sass */
+/* line 115, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-white.has-tooltip-right::after, [data-tooltip]:not(.is-disabled).has-tooltip-white.has-tooltip-right::after, [data-tooltip]:not([disabled]).has-tooltip-white.has-tooltip-right::after {
   border-color: transparent rgba(255, 255, 255, 0.9) transparent transparent !important;
 }
 
-/* line 115, src/sass/app.sass */
+/* line 117, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-white:before, [data-tooltip]:not(.is-disabled).has-tooltip-white:before, [data-tooltip]:not([disabled]).has-tooltip-white:before {
   background-color: rgba(255, 255, 255, 0.9);
   color: #0a0a0a;
 }
 
-/* line 104, src/sass/app.sass */
+/* line 106, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-black::after, [data-tooltip]:not(.is-disabled).has-tooltip-black::after, [data-tooltip]:not([disabled]).has-tooltip-black::after {
   border-color: rgba(10, 10, 10, 0.9) transparent transparent transparent !important;
 }
 
-/* line 107, src/sass/app.sass */
+/* line 109, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-black.has-tooltip-bottom::after, [data-tooltip]:not(.is-disabled).has-tooltip-black.has-tooltip-bottom::after, [data-tooltip]:not([disabled]).has-tooltip-black.has-tooltip-bottom::after {
   border-color: transparent transparent rgba(10, 10, 10, 0.9) transparent !important;
 }
 
-/* line 110, src/sass/app.sass */
+/* line 112, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-black.has-tooltip-left::after, [data-tooltip]:not(.is-disabled).has-tooltip-black.has-tooltip-left::after, [data-tooltip]:not([disabled]).has-tooltip-black.has-tooltip-left::after {
   border-color: transparent transparent transparent rgba(10, 10, 10, 0.9) !important;
 }
 
-/* line 113, src/sass/app.sass */
+/* line 115, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-black.has-tooltip-right::after, [data-tooltip]:not(.is-disabled).has-tooltip-black.has-tooltip-right::after, [data-tooltip]:not([disabled]).has-tooltip-black.has-tooltip-right::after {
   border-color: transparent rgba(10, 10, 10, 0.9) transparent transparent !important;
 }
 
-/* line 115, src/sass/app.sass */
+/* line 117, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-black:before, [data-tooltip]:not(.is-disabled).has-tooltip-black:before, [data-tooltip]:not([disabled]).has-tooltip-black:before {
   background-color: rgba(10, 10, 10, 0.9);
   color: white;
 }
 
-/* line 104, src/sass/app.sass */
+/* line 106, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-light::after, [data-tooltip]:not(.is-disabled).has-tooltip-light::after, [data-tooltip]:not([disabled]).has-tooltip-light::after {
   border-color: rgba(245, 245, 245, 0.9) transparent transparent transparent !important;
 }
 
-/* line 107, src/sass/app.sass */
+/* line 109, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-light.has-tooltip-bottom::after, [data-tooltip]:not(.is-disabled).has-tooltip-light.has-tooltip-bottom::after, [data-tooltip]:not([disabled]).has-tooltip-light.has-tooltip-bottom::after {
   border-color: transparent transparent rgba(245, 245, 245, 0.9) transparent !important;
 }
 
-/* line 110, src/sass/app.sass */
+/* line 112, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-light.has-tooltip-left::after, [data-tooltip]:not(.is-disabled).has-tooltip-light.has-tooltip-left::after, [data-tooltip]:not([disabled]).has-tooltip-light.has-tooltip-left::after {
   border-color: transparent transparent transparent rgba(245, 245, 245, 0.9) !important;
 }
 
-/* line 113, src/sass/app.sass */
+/* line 115, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-light.has-tooltip-right::after, [data-tooltip]:not(.is-disabled).has-tooltip-light.has-tooltip-right::after, [data-tooltip]:not([disabled]).has-tooltip-light.has-tooltip-right::after {
   border-color: transparent rgba(245, 245, 245, 0.9) transparent transparent !important;
 }
 
-/* line 115, src/sass/app.sass */
+/* line 117, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-light:before, [data-tooltip]:not(.is-disabled).has-tooltip-light:before, [data-tooltip]:not([disabled]).has-tooltip-light:before {
   background-color: rgba(245, 245, 245, 0.9);
   color: rgba(0, 0, 0, 0.7);
 }
 
-/* line 104, src/sass/app.sass */
+/* line 106, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-dark::after, [data-tooltip]:not(.is-disabled).has-tooltip-dark::after, [data-tooltip]:not([disabled]).has-tooltip-dark::after {
   border-color: rgba(54, 54, 54, 0.9) transparent transparent transparent !important;
 }
 
-/* line 107, src/sass/app.sass */
+/* line 109, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-dark.has-tooltip-bottom::after, [data-tooltip]:not(.is-disabled).has-tooltip-dark.has-tooltip-bottom::after, [data-tooltip]:not([disabled]).has-tooltip-dark.has-tooltip-bottom::after {
   border-color: transparent transparent rgba(54, 54, 54, 0.9) transparent !important;
 }
 
-/* line 110, src/sass/app.sass */
+/* line 112, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-dark.has-tooltip-left::after, [data-tooltip]:not(.is-disabled).has-tooltip-dark.has-tooltip-left::after, [data-tooltip]:not([disabled]).has-tooltip-dark.has-tooltip-left::after {
   border-color: transparent transparent transparent rgba(54, 54, 54, 0.9) !important;
 }
 
-/* line 113, src/sass/app.sass */
+/* line 115, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-dark.has-tooltip-right::after, [data-tooltip]:not(.is-disabled).has-tooltip-dark.has-tooltip-right::after, [data-tooltip]:not([disabled]).has-tooltip-dark.has-tooltip-right::after {
   border-color: transparent rgba(54, 54, 54, 0.9) transparent transparent !important;
 }
 
-/* line 115, src/sass/app.sass */
+/* line 117, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-dark:before, [data-tooltip]:not(.is-disabled).has-tooltip-dark:before, [data-tooltip]:not([disabled]).has-tooltip-dark:before {
   background-color: rgba(54, 54, 54, 0.9);
   color: #fff;
 }
 
-/* line 104, src/sass/app.sass */
+/* line 106, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-primary::after, [data-tooltip]:not(.is-disabled).has-tooltip-primary::after, [data-tooltip]:not([disabled]).has-tooltip-primary::after {
   border-color: rgba(0, 209, 178, 0.9) transparent transparent transparent !important;
 }
 
-/* line 107, src/sass/app.sass */
+/* line 109, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-primary.has-tooltip-bottom::after, [data-tooltip]:not(.is-disabled).has-tooltip-primary.has-tooltip-bottom::after, [data-tooltip]:not([disabled]).has-tooltip-primary.has-tooltip-bottom::after {
   border-color: transparent transparent rgba(0, 209, 178, 0.9) transparent !important;
 }
 
-/* line 110, src/sass/app.sass */
+/* line 112, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-primary.has-tooltip-left::after, [data-tooltip]:not(.is-disabled).has-tooltip-primary.has-tooltip-left::after, [data-tooltip]:not([disabled]).has-tooltip-primary.has-tooltip-left::after {
   border-color: transparent transparent transparent rgba(0, 209, 178, 0.9) !important;
 }
 
-/* line 113, src/sass/app.sass */
+/* line 115, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-primary.has-tooltip-right::after, [data-tooltip]:not(.is-disabled).has-tooltip-primary.has-tooltip-right::after, [data-tooltip]:not([disabled]).has-tooltip-primary.has-tooltip-right::after {
   border-color: transparent rgba(0, 209, 178, 0.9) transparent transparent !important;
 }
 
-/* line 115, src/sass/app.sass */
+/* line 117, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-primary:before, [data-tooltip]:not(.is-disabled).has-tooltip-primary:before, [data-tooltip]:not([disabled]).has-tooltip-primary:before {
   background-color: rgba(0, 209, 178, 0.9);
   color: #fff;
 }
 
-/* line 104, src/sass/app.sass */
+/* line 106, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-link::after, [data-tooltip]:not(.is-disabled).has-tooltip-link::after, [data-tooltip]:not([disabled]).has-tooltip-link::after {
   border-color: rgba(50, 115, 220, 0.9) transparent transparent transparent !important;
 }
 
-/* line 107, src/sass/app.sass */
+/* line 109, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-link.has-tooltip-bottom::after, [data-tooltip]:not(.is-disabled).has-tooltip-link.has-tooltip-bottom::after, [data-tooltip]:not([disabled]).has-tooltip-link.has-tooltip-bottom::after {
   border-color: transparent transparent rgba(50, 115, 220, 0.9) transparent !important;
 }
 
-/* line 110, src/sass/app.sass */
+/* line 112, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-link.has-tooltip-left::after, [data-tooltip]:not(.is-disabled).has-tooltip-link.has-tooltip-left::after, [data-tooltip]:not([disabled]).has-tooltip-link.has-tooltip-left::after {
   border-color: transparent transparent transparent rgba(50, 115, 220, 0.9) !important;
 }
 
-/* line 113, src/sass/app.sass */
+/* line 115, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-link.has-tooltip-right::after, [data-tooltip]:not(.is-disabled).has-tooltip-link.has-tooltip-right::after, [data-tooltip]:not([disabled]).has-tooltip-link.has-tooltip-right::after {
   border-color: transparent rgba(50, 115, 220, 0.9) transparent transparent !important;
 }
 
-/* line 115, src/sass/app.sass */
+/* line 117, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-link:before, [data-tooltip]:not(.is-disabled).has-tooltip-link:before, [data-tooltip]:not([disabled]).has-tooltip-link:before {
   background-color: rgba(50, 115, 220, 0.9);
   color: #fff;
 }
 
-/* line 104, src/sass/app.sass */
+/* line 106, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-info::after, [data-tooltip]:not(.is-disabled).has-tooltip-info::after, [data-tooltip]:not([disabled]).has-tooltip-info::after {
   border-color: rgba(50, 152, 220, 0.9) transparent transparent transparent !important;
 }
 
-/* line 107, src/sass/app.sass */
+/* line 109, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-info.has-tooltip-bottom::after, [data-tooltip]:not(.is-disabled).has-tooltip-info.has-tooltip-bottom::after, [data-tooltip]:not([disabled]).has-tooltip-info.has-tooltip-bottom::after {
   border-color: transparent transparent rgba(50, 152, 220, 0.9) transparent !important;
 }
 
-/* line 110, src/sass/app.sass */
+/* line 112, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-info.has-tooltip-left::after, [data-tooltip]:not(.is-disabled).has-tooltip-info.has-tooltip-left::after, [data-tooltip]:not([disabled]).has-tooltip-info.has-tooltip-left::after {
   border-color: transparent transparent transparent rgba(50, 152, 220, 0.9) !important;
 }
 
-/* line 113, src/sass/app.sass */
+/* line 115, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-info.has-tooltip-right::after, [data-tooltip]:not(.is-disabled).has-tooltip-info.has-tooltip-right::after, [data-tooltip]:not([disabled]).has-tooltip-info.has-tooltip-right::after {
   border-color: transparent rgba(50, 152, 220, 0.9) transparent transparent !important;
 }
 
-/* line 115, src/sass/app.sass */
+/* line 117, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-info:before, [data-tooltip]:not(.is-disabled).has-tooltip-info:before, [data-tooltip]:not([disabled]).has-tooltip-info:before {
   background-color: rgba(50, 152, 220, 0.9);
   color: #fff;
 }
 
-/* line 104, src/sass/app.sass */
+/* line 106, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-success::after, [data-tooltip]:not(.is-disabled).has-tooltip-success::after, [data-tooltip]:not([disabled]).has-tooltip-success::after {
   border-color: rgba(72, 199, 116, 0.9) transparent transparent transparent !important;
 }
 
-/* line 107, src/sass/app.sass */
+/* line 109, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-success.has-tooltip-bottom::after, [data-tooltip]:not(.is-disabled).has-tooltip-success.has-tooltip-bottom::after, [data-tooltip]:not([disabled]).has-tooltip-success.has-tooltip-bottom::after {
   border-color: transparent transparent rgba(72, 199, 116, 0.9) transparent !important;
 }
 
-/* line 110, src/sass/app.sass */
+/* line 112, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-success.has-tooltip-left::after, [data-tooltip]:not(.is-disabled).has-tooltip-success.has-tooltip-left::after, [data-tooltip]:not([disabled]).has-tooltip-success.has-tooltip-left::after {
   border-color: transparent transparent transparent rgba(72, 199, 116, 0.9) !important;
 }
 
-/* line 113, src/sass/app.sass */
+/* line 115, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-success.has-tooltip-right::after, [data-tooltip]:not(.is-disabled).has-tooltip-success.has-tooltip-right::after, [data-tooltip]:not([disabled]).has-tooltip-success.has-tooltip-right::after {
   border-color: transparent rgba(72, 199, 116, 0.9) transparent transparent !important;
 }
 
-/* line 115, src/sass/app.sass */
+/* line 117, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-success:before, [data-tooltip]:not(.is-disabled).has-tooltip-success:before, [data-tooltip]:not([disabled]).has-tooltip-success:before {
   background-color: rgba(72, 199, 116, 0.9);
   color: #fff;
 }
 
-/* line 104, src/sass/app.sass */
+/* line 106, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-warning::after, [data-tooltip]:not(.is-disabled).has-tooltip-warning::after, [data-tooltip]:not([disabled]).has-tooltip-warning::after {
   border-color: rgba(255, 221, 87, 0.9) transparent transparent transparent !important;
 }
 
-/* line 107, src/sass/app.sass */
+/* line 109, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-warning.has-tooltip-bottom::after, [data-tooltip]:not(.is-disabled).has-tooltip-warning.has-tooltip-bottom::after, [data-tooltip]:not([disabled]).has-tooltip-warning.has-tooltip-bottom::after {
   border-color: transparent transparent rgba(255, 221, 87, 0.9) transparent !important;
 }
 
-/* line 110, src/sass/app.sass */
+/* line 112, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-warning.has-tooltip-left::after, [data-tooltip]:not(.is-disabled).has-tooltip-warning.has-tooltip-left::after, [data-tooltip]:not([disabled]).has-tooltip-warning.has-tooltip-left::after {
   border-color: transparent transparent transparent rgba(255, 221, 87, 0.9) !important;
 }
 
-/* line 113, src/sass/app.sass */
+/* line 115, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-warning.has-tooltip-right::after, [data-tooltip]:not(.is-disabled).has-tooltip-warning.has-tooltip-right::after, [data-tooltip]:not([disabled]).has-tooltip-warning.has-tooltip-right::after {
   border-color: transparent rgba(255, 221, 87, 0.9) transparent transparent !important;
 }
 
-/* line 115, src/sass/app.sass */
+/* line 117, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-warning:before, [data-tooltip]:not(.is-disabled).has-tooltip-warning:before, [data-tooltip]:not([disabled]).has-tooltip-warning:before {
   background-color: rgba(255, 221, 87, 0.9);
   color: rgba(0, 0, 0, 0.7);
 }
 
-/* line 104, src/sass/app.sass */
+/* line 106, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-danger::after, [data-tooltip]:not(.is-disabled).has-tooltip-danger::after, [data-tooltip]:not([disabled]).has-tooltip-danger::after {
   border-color: rgba(241, 70, 104, 0.9) transparent transparent transparent !important;
 }
 
-/* line 107, src/sass/app.sass */
+/* line 109, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-danger.has-tooltip-bottom::after, [data-tooltip]:not(.is-disabled).has-tooltip-danger.has-tooltip-bottom::after, [data-tooltip]:not([disabled]).has-tooltip-danger.has-tooltip-bottom::after {
   border-color: transparent transparent rgba(241, 70, 104, 0.9) transparent !important;
 }
 
-/* line 110, src/sass/app.sass */
+/* line 112, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-danger.has-tooltip-left::after, [data-tooltip]:not(.is-disabled).has-tooltip-danger.has-tooltip-left::after, [data-tooltip]:not([disabled]).has-tooltip-danger.has-tooltip-left::after {
   border-color: transparent transparent transparent rgba(241, 70, 104, 0.9) !important;
 }
 
-/* line 113, src/sass/app.sass */
+/* line 115, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-danger.has-tooltip-right::after, [data-tooltip]:not(.is-disabled).has-tooltip-danger.has-tooltip-right::after, [data-tooltip]:not([disabled]).has-tooltip-danger.has-tooltip-right::after {
   border-color: transparent rgba(241, 70, 104, 0.9) transparent transparent !important;
 }
 
-/* line 115, src/sass/app.sass */
+/* line 117, src/sass/app.sass */
 [data-tooltip]:not(.is-loading).has-tooltip-danger:before, [data-tooltip]:not(.is-disabled).has-tooltip-danger:before, [data-tooltip]:not([disabled]).has-tooltip-danger:before {
   background-color: rgba(241, 70, 104, 0.9);
   color: #fff;
@@ -1858,62 +1859,62 @@
   }
 }
 
-/* line 129, src/sass/app.sass */
+/* line 131, src/sass/app.sass */
 span[data-tooltip] {
   border-bottom: 1px dashed #dbdbdb;
 }
 
-/* line 134, src/sass/app.sass */
+/* line 136, src/sass/app.sass */
 span[data-tooltip].has-tooltip-white {
   border-bottom-color: white;
 }
 
-/* line 134, src/sass/app.sass */
+/* line 136, src/sass/app.sass */
 span[data-tooltip].has-tooltip-black {
   border-bottom-color: #171717;
 }
 
-/* line 134, src/sass/app.sass */
+/* line 136, src/sass/app.sass */
 span[data-tooltip].has-tooltip-light {
   border-bottom-color: white;
 }
 
-/* line 134, src/sass/app.sass */
+/* line 136, src/sass/app.sass */
 span[data-tooltip].has-tooltip-dark {
   border-bottom-color: #424242;
 }
 
-/* line 134, src/sass/app.sass */
+/* line 136, src/sass/app.sass */
 span[data-tooltip].has-tooltip-primary {
   border-bottom-color: #00ebc7;
 }
 
-/* line 134, src/sass/app.sass */
+/* line 136, src/sass/app.sass */
 span[data-tooltip].has-tooltip-link {
   border-bottom-color: #4882e0;
 }
 
-/* line 134, src/sass/app.sass */
+/* line 136, src/sass/app.sass */
 span[data-tooltip].has-tooltip-info {
   border-bottom-color: #48a3e0;
 }
 
-/* line 134, src/sass/app.sass */
+/* line 136, src/sass/app.sass */
 span[data-tooltip].has-tooltip-success {
   border-bottom-color: #5bcd83;
 }
 
-/* line 134, src/sass/app.sass */
+/* line 136, src/sass/app.sass */
 span[data-tooltip].has-tooltip-warning {
   border-bottom-color: #ffe270;
 }
 
-/* line 134, src/sass/app.sass */
+/* line 136, src/sass/app.sass */
 span[data-tooltip].has-tooltip-danger {
   border-bottom-color: #f35e7c;
 }
 
-/* line 139, src/sass/app.sass */
+/* line 141, src/sass/app.sass */
 .control span[data-tooltip] {
   border-bottom: none;
 }
