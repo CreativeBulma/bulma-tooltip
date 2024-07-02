@@ -1,131 +1,122 @@
-@import 'variables'
-@import 'position'
-@import 'animation'
+@use "bulma/sass/utilities/css-variables" as cv;
 
-=tooltip-arrow
-	&::after
-		box-sizing: border-box
-		color: $tooltip-color
-		display: inline-block
-		font-family: $tooltip-font-family
-		font-size: $tooltip-font-size
-		hyphens: auto
-		opacity: 0
-		overflow: hidden
-		pointer-events: none
-		position: absolute
-		visibility: hidden
-		z-index: $tooltip-z-index
-		content: ''
-		border-style: solid
-		border-width: $tooltip-arrow-size
-		border-color: rgba($tooltip-background-color, $tooltip-background-opacity) transparent transparent transparent
-		margin-bottom: $tooltip-arrow-size * -1 + 1
-	+tooltip-arrow-top
+@use "./_variables" as var;
+@use "./mixins" as mx;
+@forward "./_responsiveness";
 
-=tooltip-box
-	&::before
-		box-sizing: border-box
-		color: $tooltip-color
-		display: inline-block
-		font-family: $tooltip-font-family
-		font-size: $tooltip-font-size
-		hyphens: auto
-		opacity: 0
-		overflow: hidden
-		pointer-events: none
-		position: absolute
-		visibility: hidden
-		z-index: $tooltip-z-index
-		background: rgba($tooltip-background-color, $tooltip-background-opacity)
-		border-radius: $tooltip-radius
-		content: attr(data-tooltip)
-		padding: $tooltip-padding
-		text-overflow: ellipsis
-		white-space: pre-line
-	+tooltip-box-top
+[data-tooltip] {
+	@include cv.register-vars(
+		(
+			"tooltip-animation-duration": var.$tooltip-animation-duration,
+			"tooltip-animation-transition-timing-function": var.$tooltip-animation-transition-timing-function,
+			"tooltip-arrow-size": var.$tooltip-arrow-size,
+			"tooltip-background-color-h": var.$tooltip-background-color-h,
+			"tooltip-background-color-s": var.$tooltip-background-color-s,
+			"tooltip-background-color-l": var.$tooltip-background-color-l,
+			"tooltip-background-opacity": var.$tooltip-background-opacity,
+			"tooltip-border-bottom-color-h": var.$tooltip-border-bottom-color-h,
+			"tooltip-border-bottom-color-s": var.$tooltip-border-bottom-color-s,
+			"tooltip-border-bottom-color-l": var.$tooltip-border-bottom-color-l,
+			"tooltip-border-bottom-color-l-delta": var.$tooltip-border-bottom-color-l-delta,
+			"tooltip-color": var.$tooltip-color,
+			"tooltip-font-family": var.$tooltip-font-family,
+			"tooltip-font-size": var.$tooltip-font-size,
+			"tooltip-max-width": var.$tooltip-max-width,
+			"tooltip-padding": var.$tooltip-padding,
+			"tooltip-radius": var.$tooltip-radius,
+			"tooltip-z-index": var.$tooltip-z-index,
+			"tooltip-background-color": hsla(
+				cv.getVar("tooltip-background-color-h"),
+				cv.getVar("tooltip-background-color-s"),
+				cv.getVar("tooltip-background-color-l"),
+				cv.getVar("tooltip-background-opacity")
+			)
+		)
+	);
 
-=tooltip-multiline
-	&::before
-		height: auto
-		width: $tooltip-max-width
-		max-width: $tooltip-max-width
-		text-overflow: clip
-		white-space: normal
-		word-break: keep-all
-
-[data-tooltip]
 	&:not(.is-loading),
 	&:not(.is-disabled),
-	&:not([disabled])
-		cursor: pointer
-		overflow: visible
-		position: relative
+	&:not([disabled]) {
+		cursor: pointer;
+		overflow: visible;
+		position: relative;
 
-		+tooltip-box
-		&.has-tooltip-arrow
-			+tooltip-arrow
+		@include mx.tooltip-box;
 
-		&.has-tooltip-bottom
-			+tooltip-direction('bottom')
+		&.has-tooltip-arrow {
+			@include mx.tooltip-arrow;
+		}
 
-		&.has-tooltip-left
-			+tooltip-direction('left')
+		&.has-tooltip-bottom {
+			@include mx.tooltip-direction("bottom");
+		}
 
-		&.has-tooltip-right
-			+tooltip-direction('right')
+		&.has-tooltip-left {
+			@include mx.tooltip-direction("left");
+		}
 
-		&.has-tooltip-multiline
-			+tooltip-multiline
+		&.has-tooltip-right {
+			@include mx.tooltip-direction("right");
+		}
 
-		&.has-tooltip-text-left
-			&::before
-				text-align: left
-		&.has-tooltip-text-centered
-			&::before
-				text-align: center
-		&.has-tooltip-text-right
-			&::before
-				text-align: right
+		&.has-tooltip-multiline {
+			@include mx.tooltip-multiline;
+		}
 
-		@each $name, $pair in $colors
-			$color: nth($pair, 1)
-			$color-invert: nth($pair, 2)
-			&.has-tooltip-#{$name}
-				&::after
-					border-color: rgba($color, $tooltip-background-opacity) transparent transparent transparent !important
-				&.has-tooltip-bottom
-					&::after
-						border-color: transparent transparent rgba($color, $tooltip-background-opacity) transparent !important
-				&.has-tooltip-left
-					&::after
-						border-color: transparent transparent transparent rgba($color, $tooltip-background-opacity) !important
-				&.has-tooltip-right
-					&::after
-						border-color: transparent rgba($color, $tooltip-background-opacity) transparent transparent !important
-				&:before
-					background-color: rgba($color, $tooltip-background-opacity)
-					color: $color-invert
+		&.has-tooltip-text-left {
+			&::before {
+				text-align: left;
+			}
+		}
 
-		+tooltip-hover
-			opacity: 1
-			visibility: visible
+		&.has-tooltip-text-centered {
+			&::before {
+				text-align: center;
+			}
+		}
 
-		&.has-tooltip-fade
-			+tooltip-fade
+		&.has-tooltip-text-right {
+			&::before {
+				text-align: right;
+			}
+		}
 
-		@import 'responsiveness'
-	
-span
-	&[data-tooltip]
-		border-bottom: 1px dashed $grey-lighter
-		@each $name, $pair in $colors
-			$color: nth($pair, 1)
-			$color-invert: nth($pair, 2)
-			&.has-tooltip-#{$name}
-				border-bottom-color: lighten($color, 5%)
+		@each $name, $pair in var.$tooltip-colors {
+			&.has-tooltip-#{$name} {
+				@include cv.register-vars(
+					(
+						"tooltip-background-color-h": cv.getVar($name, "", "-h"),
+						"tooltip-background-color-s": cv.getVar($name, "", "-s"),
+						"tooltip-background-color-l": cv.getVar($name, "", "-l"),
+						"tooltip-color": cv.getVar($name, "", "-invert"),
+					)
+				);
+			}
+		}
 
-.control
-	span
-		&[data-tooltip]
-			border-bottom: none
+		@include mx.tooltip-hover {
+			opacity: 1;
+			visibility: visible;
+		}
+
+		&.has-tooltip-fade {
+			@include mx.tooltip-fade;
+		}
+	}
+}
+
+span[data-tooltip] {
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: hsl(
+		cv.getVar("tooltip-border-bottom-color-h"),
+		cv.getVar("tooltip-border-bottom-color-s"),
+		calc(#{cv.getVar("tooltip-border-bottom-color-l")} - #{cv.getVar("tooltip-border-bottom-color-l-delta")})
+	);
+}
+
+.control {
+	span[data-tooltip] {
+		border-bottom: none;
+	}
+}

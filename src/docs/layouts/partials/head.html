@@ -8,12 +8,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     {{ block "meta_tags" . }}{{end}}
-    
+
     <title>{{ block "title" . }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
 
     <link rel="icon" href="{{ "favicon.png" | absURL}}">
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css">
     <link rel="stylesheet" href="{{$.Site.BaseURL}}/css/docs.css" />
     <link rel="stylesheet" href="{{$.Site.BaseURL}}/css/bulma-tooltip.min.css" />
 
@@ -23,4 +23,3 @@
 </head>
 
 <body class='{{ block "body_classes" . }}{{ end }}'>
-    

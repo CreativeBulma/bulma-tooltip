@@ -1,124 +1,152 @@
-=tooltip-hover
+@use "bulma/sass/utilities/css-variables" as cv;
+
+@mixin tooltip-hover {
 	&:hover::before,
 	&:hover::after,
 	&.has-tooltip-active::before,
-	&.has-tooltip-active::after
-		@content
+	&.has-tooltip-active::after {
+		@content;
+	}
+}
 
-=tooltip-arrow-top
-	&.has-tooltip-arrow
-		&::after
-			top: 0
-			right: auto
-			bottom: auto
-			left: 50%
-			margin-top: $tooltip-arrow-size * -1 + 1
-			margin-right: auto
-			margin-bottom: auto
-			margin-left: $tooltip-arrow-size * -1 + 1
-			border-color: rgba($tooltip-background-color, $tooltip-background-opacity) transparent transparent transparent
+@mixin tooltip-arrow-top {
+	&.has-tooltip-arrow {
+		&::after {
+			top: 0;
+			right: auto;
+			bottom: auto;
+			left: 50%;
+			margin-top: calc(#{cv.getVar("tooltip-arrow-size")} * -1 + 1);
+			margin-right: auto;
+			margin-bottom: auto;
+			margin-left: calc(#{cv.getVar("tooltip-arrow-size")} * -1 + 1);
+			border-color: cv.getVar("tooltip-background-color") transparent transparent transparent;
+		}
+	}
+}
 
-=tooltip-box-top
-	&::before
-		top: 0
-		right: auto
-		bottom: auto
-		left: 50%
-		top: 0
-		margin-top: $tooltip-arrow-size * -1 + 1
-		margin-bottom: auto
-		transform: translate(-50%, -100%)
+@mixin tooltip-box-top {
+	&::before {
+		top: 0;
+		right: auto;
+		bottom: auto;
+		left: 50%;
+		top: 0;
+		margin-top: calc(#{cv.getVar("tooltip-arrow-size")} * -1 + 1);
+		margin-bottom: auto;
+		transform: translate(-50%, -100%);
+	}
+}
 
-=tooltip-top
-	+tooltip-arrow-top
-	+tooltip-box-top
+@mixin tooltip-top {
+	@include tooltip-arrow-top;
+	@include tooltip-box-top;
+}
 
-=tooltip-arrow-bottom
-	&.has-tooltip-arrow
-		&::after
-			top: auto
-			right: auto
-			bottom: -1px
-			left: 50%
-			margin-top: auto
-			margin-right: auto
-			margin-bottom: $tooltip-arrow-size * -1 + 1
-			margin-left: $tooltip-arrow-size * -1 + 1
-			border-color: transparent transparent rgba($tooltip-background-color, $tooltip-background-opacity) transparent
+@mixin tooltip-arrow-bottom {
+	&.has-tooltip-arrow {
+		&::after {
+			top: auto;
+			right: auto;
+			bottom: -1px;
+			left: 50%;
+			margin-top: auto;
+			margin-right: auto;
+			margin-bottom: calc(#{cv.getVar("tooltip-arrow-size")} * -1 + 1);
+			margin-left: calc(#{cv.getVar("tooltip-arrow-size")} * -1 + 1);
+			border-color: transparent transparent cv.getVar("tooltip-background-color") transparent;
+		}
+	}
+}
 
-=tooltip-box-bottom
-	&::before
-		top: auto
-		right: auto
-		bottom: 0
-		left: 50%
-		margin-top: auto
-		margin-bottom: $tooltip-arrow-size * -1 + 1
-		transform: translate(-50%, 100%)
+@mixin tooltip-box-bottom {
+	&::before {
+		top: auto;
+		right: auto;
+		bottom: 0;
+		left: 50%;
+		margin-top: auto;
+		margin-bottom: calc(#{cv.getVar("tooltip-arrow-size")} * -1 + 1);
+		transform: translate(-50%, 100%);
+	}
+}
 
-=tooltip-bottom
-	+tooltip-arrow-bottom
-	+tooltip-box-bottom
+@mixin tooltip-bottom {
+	@include tooltip-arrow-bottom;
+	@include tooltip-box-bottom;
+}
 
+@mixin tooltip-arrow-left {
+	&.has-tooltip-arrow {
+		&::after {
+			top: auto;
+			right: auto;
+			bottom: 50%;
+			left: 0;
+			margin-top: auto;
+			margin-right: auto;
+			margin-bottom: calc(#{cv.getVar("tooltip-arrow-size")} * -1);
+			margin-left: calc(#{cv.getVar("tooltip-arrow-size")} * -1 + 1);
+			border-color: transparent transparent transparent cv.getVar("tooltip-background-color");
+		}
+	}
+}
 
-=tooltip-arrow-left
-	&.has-tooltip-arrow
-		&::after
-			top: auto
-			right: auto
-			bottom: 50%
-			left: 0
-			margin-top: auto
-			margin-right: auto
-			margin-bottom: $tooltip-arrow-size * -1
-			margin-left: $tooltip-arrow-size * -1 + 1
-			border-color: transparent transparent transparent rgba($tooltip-background-color, $tooltip-background-opacity)
+@mixin tooltip-box-left {
+	&::before {
+		top: auto;
+		right: auto;
+		bottom: 50%;
+		left: calc(#{cv.getVar("tooltip-arrow-size")} * -1 + 1);
+		transform: translate(-100%, 50%);
+	}
+}
 
-=tooltip-box-left
-	&::before
-		top: auto
-		right: auto
-		bottom: 50%
-		left: $tooltip-arrow-size * -1 + 1
-		transform: translate(-100%, 50%)
+@mixin tooltip-left {
+	@include tooltip-arrow-left;
+	@include tooltip-box-left;
+}
 
-=tooltip-left
-	+tooltip-arrow-left
-	+tooltip-box-left
+@mixin tooltip-arrow-right {
+	&.has-tooltip-arrow {
+		&::after {
+			top: auto;
+			right: 0;
+			bottom: 50%;
+			left: auto;
+			margin-top: auto;
+			margin-right: calc(#{cv.getVar("tooltip-arrow-size")} * -1);
+			margin-bottom: calc(#{cv.getVar("tooltip-arrow-size")} * -1);
+			margin-left: auto;
+			border-color: transparent cv.getVar("tooltip-background-color") transparent transparent;
+		}
+	}
+}
 
+@mixin tooltip-box-right {
+	&::before {
+		top: auto;
+		right: calc(#{cv.getVar("tooltip-arrow-size")} * -1 + 1);
+		bottom: 50%;
+		left: auto;
+		margin-top: auto;
+		transform: translate(100%, 50%);
+	}
+}
 
-=tooltip-arrow-right
-	&.has-tooltip-arrow
-		&::after
-			top: auto
-			right: 0
-			bottom: 50%
-			left: auto
-			margin-top: auto
-			margin-right: $tooltip-arrow-size * -1
-			margin-bottom: $tooltip-arrow-size * -1
-			margin-left: auto
-			border-color: transparent rgba($tooltip-background-color, $tooltip-background-opacity) transparent transparent
+@mixin tooltip-right {
+	@include tooltip-arrow-right;
+	@include tooltip-box-right;
+}
 
-=tooltip-box-right
-	&::before
-		top: auto
-		right: $tooltip-arrow-size * -1 + 1
-		bottom: 50%
-		left: auto
-		margin-top: auto
-		transform: translate(100%, 50%)
-
-=tooltip-right
-	+tooltip-arrow-right
-	+tooltip-box-right
-
-=tooltip-direction($direction)
-	@if $direction == 'top'
-		@include tooltip-top
-	@else if $direction == 'right'
-		@include tooltip-right
-	@else if $direction == 'bottom'
-		@include tooltip-bottom
-	@else if $direction == 'left'
-		@include tooltip-left
+@mixin tooltip-direction($direction) {
+	@if $direction == "top" {
+		@include tooltip-top;
+	} @else if $direction == "right" {
+		@include tooltip-right;
+	} @else if $direction == "bottom" {
+		@include tooltip-bottom;
+	} @else if $direction == "left" {
+		@include tooltip-left;
+	}
+}

@@ -1,12 +1,22 @@
-$tooltip-animation-duration: .3s !default
-$tooltip-animation-transition-timing-function: linear !default
-$tooltip-arrow-size: 6px !default
-$tooltip-background-color: $grey-dark !default
-$tooltip-background-opacity: 0.9 !default
-$tooltip-color: $white !default
-$tooltip-font-family: $family-primary !default
-$tooltip-font-size: $size-7 !default
-$tooltip-max-width: 15rem !default
-$tooltip-padding: .5rem 1rem !default
-$tooltip-radius: $radius-small !default
-$tooltip-z-index: 1020 !default
+@use "bulma/sass/utilities/derived-variables" as dv;
+@use "bulma/sass/utilities/css-variables" as cv;
+
+$tooltip-animation-duration: 0.3s !default;
+$tooltip-animation-transition-timing-function: linear !default;
+$tooltip-arrow-size: 6px !default;
+$tooltip-background-color-h: cv.getVar("text", "", "-h") !default;
+$tooltip-background-color-s: cv.getVar("text", "", "-s") !default;
+$tooltip-background-color-l: cv.getVar("text", "", "-l") !default;
+$tooltip-background-opacity: 0.9 !default;
+$tooltip-border-bottom-color-h: cv.getVar("scheme", "", "-h") !default;
+$tooltip-border-bottom-color-s: cv.getVar("scheme", "", "-s") !default;
+$tooltip-border-bottom-color-l: cv.getVar("border", "", "-l") !default;
+$tooltip-border-bottom-color-l-delta: 5% !default;
+$tooltip-color: cv.getVar("white") !default;
+$tooltip-font-family: cv.getVar("family-primary") !default;
+$tooltip-font-size: cv.getVar("size-7") !default;
+$tooltip-max-width: 15rem !default;
+$tooltip-padding: 0.5rem 1rem !default;
+$tooltip-radius: cv.getVar("radius-small") !default;
+$tooltip-z-index: 1020 !default;
+$tooltip-colors: dv.$colors !default;

@@ -1,151 +1,247 @@
-@each $direction in top, right, bottom, left
-	&.has-tooltip-#{$direction}-mobile
-		+mobile
-			@include tooltip-direction(#{$direction})
-	&.has-tooltip-#{$direction}-tablet
-		+tablet
-			@include tooltip-direction(#{$direction})
-	&.has-tooltip-#{$direction}-tablet-only
-		+tablet-only
-			@include tooltip-direction(#{$direction})
-	&.has-tooltip-#{$direction}-touch
-		+touch
-			@include tooltip-direction(#{$direction})
-	&.has-tooltip-#{$direction}-desktop
-		+desktop
-			@include tooltip-direction(#{$direction})
-	&.has-tooltip-#{$direction}-desktop-only
-		+desktop-only
-			@include tooltip-direction(#{$direction})
-	&.has-tooltip-#{$direction}-until-widescreen
-		+until-widescreen
-			@include tooltip-direction(#{$direction})
-	&.has-tooltip-#{$direction}-widescreen
-		+widescreen
-			@include tooltip-direction(#{$direction})
-	&.has-tooltip-#{$direction}-widescreen-only
-		+widescreen-only
-			@include tooltip-direction(#{$direction})
-	&.has-tooltip-#{$direction}-until-fullhd
-		+until-fullhd
-			@include tooltip-direction(#{$direction})
-	&.has-tooltip-#{$direction}-fullhd
-		+fullhd
-			@include tooltip-direction(#{$direction})
+@use "bulma/sass/utilities/mixins" as mxBulma;
+@use "./mixins" as mx;
 
-// Hidden breakpoints
-&.has-tooltip-hidden-mobile
-	+mobile
-		&::after,
-		&::before
-			opacity: 0 !important
-			display: none !important
-&.has-tooltip-hidden-tablet
-	+tablet
-		&::after,
-		&::before
-			opacity: 0 !important
-			display: none !important
-&.has-tooltip-hidden-tablet-only
-	+tablet-only
-		&::after,
-		&::before
-			opacity: 0 !important
-			display: none !important
-&.has-tooltip-hidden-touch
-	+touch
-		&::after,
-		&::before
-			opacity: 0 !important
-			display: none !important
-&.has-tooltip-hidden-desktop
-	+desktop
-		&::after,
-		&::before
-			opacity: 0 !important
-			display: none !important
-&.has-tooltip-hidden-desktop-only
-	+desktop-only
-		&::after,
-		&::before
-			opacity: 0 !important
-			display: none !important
-&.has-tooltip-hidden-until-widescreen
-	+until-widescreen
-		&::after,
-		&::before
-			opacity: 0 !important
-			display: none !important
-&.has-tooltip-hidden-widescreen
-	+widescreen
-		&::after,
-		&::before
-			opacity: 0 !important
-			display: none !important
-&.has-tooltip-hidden-widescreen-only
-	+widescreen-only
-		&::after,
-		&::before
-			opacity: 0 !important
-			display: none !important
-&.has-tooltip-hidden-until-fullhd
-	+until-fullhd
-		&::after,
-		&::before
-			opacity: 0 !important
-			display: none !important
-&.has-tooltip-hidden-fullhd
-	+fullhd
-		&::after,
-		&::before
-			opacity: 0 !important
-			display: none !important
+[data-tooltip] {
+	@each $direction in top, right, bottom, left {
+		&.has-tooltip-#{$direction}-mobile {
+			@include mxBulma.mobile {
+				@include mx.tooltip-direction(#{$direction});
+			}
+		}
+		&.has-tooltip-#{$direction}-tablet {
+			@include mxBulma.tablet {
+				@include mx.tooltip-direction(#{$direction});
+			}
+		}
+		&.has-tooltip-#{$direction}-tablet-only {
+			@include mxBulma.tablet-only {
+				@include mx.tooltip-direction(#{$direction});
+			}
+		}
+		&.has-tooltip-#{$direction}-touch {
+			@include mxBulma.touch {
+				@include mx.tooltip-direction(#{$direction});
+			}
+		}
+		&.has-tooltip-#{$direction}-desktop {
+			@include mxBulma.desktop {
+				@include mx.tooltip-direction(#{$direction});
+			}
+		}
+		&.has-tooltip-#{$direction}-desktop-only {
+			@include mxBulma.desktop-only {
+				@include mx.tooltip-direction(#{$direction});
+			}
+		}
+		&.has-tooltip-#{$direction}-until-widescreen {
+			@include mxBulma.until-widescreen {
+				@include mx.tooltip-direction(#{$direction});
+			}
+		}
+		&.has-tooltip-#{$direction}-widescreen {
+			@include mxBulma.widescreen {
+				@include mx.tooltip-direction(#{$direction});
+			}
+		}
+		&.has-tooltip-#{$direction}-widescreen-only {
+			@include mxBulma.widescreen-only {
+				@include mx.tooltip-direction(#{$direction});
+			}
+		}
+		&.has-tooltip-#{$direction}-until-fullhd {
+			@include mxBulma.until-fullhd {
+				@include mx.tooltip-direction(#{$direction});
+			}
+		}
+		&.has-tooltip-#{$direction}-fullhd {
+			@include mxBulma.fullhd {
+				@include mx.tooltip-direction(#{$direction});
+			}
+		}
+	}
 
-// Text alignement breakpoints
-@each $direction in (left, left), (centered, center), (right, right)
-	$dir: nth($direction, 1)
-	$text: nth($direction, 2)
-	&.has-tooltip-text-#{$dir}-mobile
-		+mobile
-			&::before
-				text-align: #{$text}
-	&.has-tooltip-text-#{$dir}-tablet
-		+tablet
-			&::before
-				text-align: #{$text}
-	&.has-tooltip-text-#{$dir}-tablet-only
-		+tablet-only
-			&::before
-				text-align: #{$text}
-	&.has-tooltip-text-#{$dir}-touch
-		+touch
-			&::before
-				text-align: #{$text}
-	&.has-tooltip-text-#{$dir}-desktop
-		+desktop
-			&::before
-				text-align: #{$text}
-	&.has-tooltip-text-#{$dir}-desktop-only
-		+desktop-only
-			&::before
-				text-align: #{$text}
-	&.has-tooltip-text-#{$dir}-until-widescreen
-		+until-widescreen
-			&::before
-				text-align: #{$text}
-	&.has-tooltip-text-#{$dir}-widescreen
-		+widescreen
-			&::before
-				text-align: #{$text}
-	&.has-tooltip-text-#{$dir}-widescreen-only
-		+widescreen-only
-			&::before
-				text-align: #{$text}
-	&.has-tooltip-text-#{$dir}-until-fullhd
-		+until-fullhd
-			&::before
-				text-align: #{$text}
-	&.has-tooltip-text-#{$dir}-fullhd
-		+fullhd
-			&::before
-				text-align: #{$text}
+	// Hidden breakpoints
+	&.has-tooltip-hidden-mobile {
+		@include mxBulma.mobile {
+			&::after,
+			&::before {
+				opacity: 0 !important;
+				display: none !important;
+			}
+		}
+	}
+	&.has-tooltip-hidden-tablet {
+		@include mxBulma.tablet {
+			&::after,
+			&::before {
+				opacity: 0 !important;
+				display: none !important;
+			}
+		}
+	}
+	&.has-tooltip-hidden-tablet-only {
+		@include mxBulma.tablet-only {
+			&::after,
+			&::before {
+				opacity: 0 !important;
+				display: none !important;
+			}
+		}
+	}
+	&.has-tooltip-hidden-touch {
+		@include mxBulma.touch {
+			&::after,
+			&::before {
+				opacity: 0 !important;
+				display: none !important;
+			}
+		}
+	}
+	&.has-tooltip-hidden-desktop {
+		@include mxBulma.desktop {
+			&::after,
+			&::before {
+				opacity: 0 !important;
+				display: none !important;
+			}
+		}
+	}
+	&.has-tooltip-hidden-desktop-only {
+		@include mxBulma.desktop-only {
+			&::after,
+			&::before {
+				opacity: 0 !important;
+				display: none !important;
+			}
+		}
+	}
+	&.has-tooltip-hidden-until-widescreen {
+		@include mxBulma.until-widescreen {
+			&::after,
+			&::before {
+				opacity: 0 !important;
+				display: none !important;
+			}
+		}
+	}
+	&.has-tooltip-hidden-widescreen {
+		@include mxBulma.widescreen {
+			&::after,
+			&::before {
+				opacity: 0 !important;
+				display: none !important;
+			}
+		}
+	}
+	&.has-tooltip-hidden-widescreen-only {
+		@include mxBulma.widescreen-only {
+			&::after,
+			&::before {
+				opacity: 0 !important;
+				display: none !important;
+			}
+		}
+	}
+	&.has-tooltip-hidden-until-fullhd {
+		@include mxBulma.until-fullhd {
+			&::after,
+			&::before {
+				opacity: 0 !important;
+				display: none !important;
+			}
+		}
+	}
+	&.has-tooltip-hidden-fullhd {
+		@include mxBulma.fullhd {
+			&::after,
+			&::before {
+				opacity: 0 !important;
+				display: none !important;
+			}
+		}
+	}
+
+	// Text alignment breakpoints
+	@each $direction in (left, left), (centered, center), (right, right) {
+		$dir: nth($direction, 1);
+		$text: nth($direction, 2);
+
+		&.has-tooltip-text-#{$dir}-mobile {
+			@include mxBulma.mobile {
+				&::before {
+					text-align: #{$text};
+				}
+			}
+		}
+		&.has-tooltip-text-#{$dir}-tablet {
+			@include mxBulma.tablet {
+				&::before {
+					text-align: #{$text};
+				}
+			}
+		}
+		&.has-tooltip-text-#{$dir}-tablet-only {
+			@include mxBulma.tablet-only {
+				&::before {
+					text-align: #{$text};
+				}
+			}
+		}
+		&.has-tooltip-text-#{$dir}-touch {
+			@include mxBulma.touch {
+				&::before {
+					text-align: #{$text};
+				}
+			}
+		}
+		&.has-tooltip-text-#{$dir}-desktop {
+			@include mxBulma.desktop {
+				&::before {
+					text-align: #{$text};
+				}
+			}
+		}
+		&.has-tooltip-text-#{$dir}-desktop-only {
+			@include mxBulma.desktop-only {
+				&::before {
+					text-align: #{$text};
+				}
+			}
+		}
+		&.has-tooltip-text-#{$dir}-until-widescreen {
+			@include mxBulma.until-widescreen {
+				&::before {
+					text-align: #{$text};
+				}
+			}
+		}
+		&.has-tooltip-text-#{$dir}-widescreen {
+			@include mxBulma.widescreen {
+				&::before {
+					text-align: #{$text};
+				}
+			}
+		}
+		&.has-tooltip-text-#{$dir}-widescreen-only {
+			@include mxBulma.widescreen-only {
+				&::before {
+					text-align: #{$text};
+				}
+			}
+		}
+		&.has-tooltip-text-#{$dir}-until-fullhd {
+			@include mxBulma.until-fullhd {
+				&::before {
+					text-align: #{$text};
+				}
+			}
+		}
+		&.has-tooltip-text-#{$dir}-fullhd {
+			@include mxBulma.fullhd {
+				&::before {
+					text-align: #{$text};
+				}
+			}
+		}
+	}
+}
