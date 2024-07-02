@@ -1,0 +1,27 @@
+@use "bulma/sass/utilities/css-variables" as cv;
+@use "./position" as pos;
+
+@mixin tooltip-box {
+	&::before {
+		box-sizing: border-box;
+		color: cv.getVar("tooltip-color");
+		display: inline-block;
+		font-family: cv.getVar("tooltip-font-family");
+		font-size: cv.getVar("tooltip-font-size");
+		hyphens: auto;
+		opacity: 0;
+		overflow: hidden;
+		pointer-events: none;
+		position: absolute;
+		visibility: hidden;
+		z-index: cv.getVar("tooltip-z-index");
+		background: cv.getVar("tooltip-background-color");
+		border-radius: cv.getVar("tooltip-radius");
+		content: attr(data-tooltip);
+		padding: cv.getVar("tooltip-padding");
+		text-overflow: ellipsis;
+		white-space: pre;
+	}
+
+	@include pos.tooltip-box-top;
+}

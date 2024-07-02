@@ -1,0 +1,25 @@
+@use "bulma/sass/utilities/css-variables" as cv;
+@use "./position" as pos;
+
+@mixin tooltip-arrow {
+	&::after {
+		box-sizing: border-box;
+		color: cv.getVar("tooltip-color");
+		display: inline-block;
+		font-family: cv.getVar("tooltip-font-family");
+		font-size: cv.getVar("tooltip-font-size");
+		hyphens: auto;
+		opacity: 0;
+		overflow: hidden;
+		pointer-events: none;
+		position: absolute;
+		visibility: hidden;
+		z-index: cv.getVar("tooltip-z-index");
+		content: "";
+		border-style: solid;
+		border-width: cv.getVar("tooltip-arrow-size");
+		border-color: cv.getVar("tooltip-background-color") transparent transparent transparent;
+		margin-bottom: calc(#{cv.getVar("tooltip-arrow-size")} * -1 + 1);
+	}
+	@include pos.tooltip-arrow-top;
+}

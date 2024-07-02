@@ -32,16 +32,16 @@ gulp.task('styles:build', function() {
     const parsePath = require('parse-filepath');
     const postcss = require('gulp-postcss');
     const rename = require("gulp-rename");
-    const sass = require('gulp-sass');
+    const sass = require('gulp-sass')(require('sass'));
 
     distPath = parsePath(package.style);
 
-    if (fs.existsSync(path.resolve(__dirname, 'src/sass/index.sass'))) {
-        return gulp.src(['node_modules/bulma/sass/utilities/_all.sass', 'src/sass/index.sass'])
-            .pipe(concat('app.sass'))
+    if (fs.existsSync(path.resolve(__dirname, 'src/sass/index.scss'))) {
+        return gulp.src(['src/sass/index.scss'])
+            .pipe(concat('app.scss'))
             .pipe(sass({
                 loadPath: [path.resolve(__dirname, 'src/sass')],
-                includePaths: ['node_modules', 'node_modules/bulma/sass/utilities/'],
+                includePaths: ['node_modules'],
                 outputStyle: "expanded",
                 sourceComments: true
             }).on('error', sass.logError))
@@ -61,7 +61,7 @@ gulp.task('styles:build', function() {
 });
 
 gulp.task('styles:minify', function() {
-    const cleancss = require('gulp-cleancss');
+    const cleancss = require('gulp-clean-css');
     const cssnano = require('cssnano');
     const header = require('gulp-header');
     const parsePath = require('parse-filepath');
@@ -139,7 +139,7 @@ gulp.task('doc:build', gulp.series(shell.task(['node_modules/.bin/hugo --source 
 });
 
 gulp.task('doc:serve', gulp.parallel(shell.task([`node_modules/.bin/hugo server -D --bind ${internalIp.v4.sync()} --baseURL ${internalIp.v4.sync()} --source src/docs --watch`]), function() {
-    gulp.watch(path.resolve(__dirname, 'src/sass/**/*.sass'), gulp.series('build:styles'));
+    gulp.watch(path.resolve(__dirname, 'src/sass/**/*.scss'), gulp.series('build:styles'));
 }), done => {
     done();
 });
