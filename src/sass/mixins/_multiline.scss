@@ -1,0 +1,13 @@
+@use "bulma/sass/utilities/css-variables" as cv;
+@use "./position" as pos;
+
+@mixin tooltip-multiline {
+	&::before {
+		height: auto;
+		width: cv.getVar("tooltip-max-width");
+		max-width: cv.getVar("tooltip-max-width");
+		text-overflow: clip;
+		white-space: normal;
+		word-break: keep-all;
+	}
+}

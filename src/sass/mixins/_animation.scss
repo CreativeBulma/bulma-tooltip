@@ -1,0 +1,10 @@
+@use "bulma/sass/utilities/css-variables" as cv;
+
+@mixin tooltip-fade {
+	&::before,
+	&::after {
+		transition: opacity cv.getVar("tooltip-animation-duration")
+				cv.getVar("tooltip-animation-transition-timing-function"),
+			visibility cv.getVar("tooltip-animation-duration") cv.getVar("tooltip-animation-transition-timing-function");
+	}
+}

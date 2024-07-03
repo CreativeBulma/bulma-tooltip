@@ -67,7 +67,7 @@ Display long tooltip content by adding `has-tooltip-multiline` class on the elem
 
 You can change tooltip text alignement by adding `has-tooltip-text-left`, `has-tooltip-text-centered` or `has-tooltip-text-right` modifier.
 {{< preview id="multiline" lang="html" >}}
-<p>Lorem ipsum dolor sit amet, <span class="has-tooltip-arrow has-tooltipl-multiline" data-tooltip="Multiline&#10;Content&#10;World!">consectetur adipisicing elit</span>. Ipsa fugit dolores earum quod distinctio ducimus non dignissimos molestias amet corrupti voluptatum assumenda impedit beatae veritatis nemo veniam error, hic cumque.</p>
+<p>Lorem ipsum dolor sit amet, <span class="has-tooltip-arrow has-tooltip-multiline" data-tooltip="Multiline&#10;Content&#10;World!">consectetur adipisicing elit</span>. Ipsa fugit dolores earum quod distinctio ducimus non dignissimos molestias amet corrupti voluptatum assumenda impedit beatae veritatis nemo veniam error, hic cumque.</p>
 {{< /preview >}}
 
 ### Colors
