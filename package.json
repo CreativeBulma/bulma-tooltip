@@ -3,11 +3,6 @@
 	"description": "Display a tooltip attached to any kind of element, in different position.",
 	"version": "1.2.0",
 	"homepage": "https://github.com/CreativeBulma/bulma-tooltip",
-	"author": {
-		"name": "Gaetan",
-		"email": "support@creativebulma.net",
-		"url": "https://creativebulma.net"
-	},
 	"main": "./src/sass/index.sass",
 	"style": "./dist/bulma-tooltip.css",
 	"sass": "./src/sass/index.sass",
