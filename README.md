@@ -1,5 +1,5 @@
 # :exclamation::exclamation::exclamation: Looking for new Maintainer :exclamation::exclamation::exclamation:
-As you may have noticed, this package has not been updated for some time. I'm sorry, but unfortunately I'm not able to continue to maintain it, so I'm looking for someone who would like to take it over and maintain it. If you are interested, please contact me at wikiki@protonmail.com to discuss how to proceed.
+As you may have noticed, this package has not been updated for some time. I'm sorry, but unfortunately I'm not able to continue to maintain it, so I'm looking for someone who would like to take it over and maintain it. If you are interested, open an issue to request ownership transfer.
 
 # Introduction
 This components has been developped as a [Bulma](https://bulma.io) extension and brings the ability to **easily display a tooltip attached to any kind of element, in different position**.
